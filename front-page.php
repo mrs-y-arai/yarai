@@ -2,12 +2,12 @@
 <div class="main-visual">
         <div class="container">
             <div class="main-visual__inner">
-                <h2 class="page__hdl lg-hdl">I AM ENGINEER</h2>
-                <h3 class="page__lead sm-hdl">
+                <h1 class="page__hdl lg-hdl">I AM ENGINEER</h1>
+                <strong class="page__lead sm-hdl">
                     ただ作るだけではなく、売上向上、アクセス増加<br>
                     に繋がるよう貢献したい。
-                </h3>
-                <a href="./contact" id="top-works__link" class="xl-font">お問い合わせ</a>
+                </strong>
+                <a href="./contact" class="xl-font top-works__link slide-bg">CONTACT</a>
             </div>
         </div>
     </div>
@@ -22,15 +22,30 @@
                 <div class="section__inner">
                     <div class="profile-text__wrap">
                         <h3 class="profile-text__title xl-font"><span>私</span>について</h3>
-                        <p class="profile__name lg-font">Name:Yuki Arai</p>
-                        <p class="profile-text md-font">私は、東京都内のWeb制作会社で働いております。</p>
-                        <p class="profile-text md-font"><span class="strong-font" >コーポレートサイト制作、LP制作、Wordpressサイトのコーディング</span>ができます</p>
-                        <p class="profile-text md-font">また、<span class="strong-font" >SNS運用</span>や<span class="strong-font" >ブログの運用</span>なども好きなので、その経験が活かせたらなと思っております。</p>
-                        <p class="profile-text md-font">ただ作るだけでなく、<span class="strong-font" >売り上げ増加に影響するような</span>仕事をしたいと思っております。</p>
+                        <p class="profile__name lg-font">名前:荒井 勇己</p>
+                        <p class="profile-text md-font">私は、東京都内のWeb制作会社でWebディレクターとして働きつつ、<br>副業でコーディングをしております。</p>
+                        <br>
+                        <p class="profile-text md-font">■できること</p>
+                        <p class="profile-text md-font">・HTML/CSSコーディング・JavaScriptのアニメーション実装</p>
+                        <p class="profile-text md-font">・Wordpress自作テーマ開発</p>
+                        <p class="profile-text md-font">・Wordpress既存テーマカスタマイズ</p>
+                        <p class="profile-text md-font">・C++プログラミング/シェルスクリプト</p>
+                        <p class="profile-text md-font">・Webディレクション業務(スケジュール管理/品質管理など)</p>
+                        <p class="profile-text md-font">・機能設計/テスト設計(コーポレートサイトレベル)</p>
+                        <br>
+                        <p class="profile-text md-font">■強み</p>
+                        <p class="profile-text md-font">【自走力/行動力が強みです】</p>
+                        <p class="profile-text md-font">・私は気になったらすぐに行動するタイプの人間です。YouTubeの広告がきっかけで独学でコーディングを始め、今ではWebコーディングで副業できるレベルになりました。特に誰にも先導されることなく、自ら考え学習を進めて来ました。</p>
+                        <br>
+                        <p class="profile-text md-font">■やりたいこと</p>
+                        <p class="profile-text md-font">【ただ作るだけでなく、結果に繋がるようなサイト制作をしたいと思っております】</p>
+                        <p class="profile-text md-font">・結果に繋がるようなサイト制作をするため、内部SEOに強い/アクセシビリティを意識したコーディングができるようになりたいです。</p>
+                        <a href="./about" id="" class="lg-font link-text profile-text__link">View more</a>
                     </div>
-                    <div class="yellow-bg"></div>
+                    <div class="profile-img__wrap">
+                        <img src="<?php echo esc_url( get_template_directory_uri() ). '/img/profile_img.jpg'; ?>" alt="荒井 勇己" class="profile-img">
+                    </div>                    
                 </div>
-                <a href="./about" id="about__link" class="lg-font">MORE</a>
             </div>
         </section>
     
@@ -65,7 +80,7 @@
                                                 <p class="works__description-text md-font">
                                                     <?php echo CFS()->get( 'works_summarize' );?>
                                                 </p>
-                                                <a href="<?php the_permalink(); ?>" class="works__item-link">サイトの詳細へ ></a>
+                                                <a href="<?php the_permalink(); ?>" class="works__item-link link-text lg-font">View more</a>
                                             </div>
                                     </li>
 
@@ -81,37 +96,10 @@
                                         
                                 <?php endif; ?>
 
-                                <a href="./works" id="works__link" class="lg-font">MORE</a>
+                                <a href="./works" id="works__link" class="lg-font slide-bg">MORE</a>
                             </div>
                 </div>
-        </section>
-
-        <!-- <section id="price">
-            <div id="triangle" class="triangle"></div>
-            <div class="container">
-                <h2 class="section__hdl price__hdl md-hdl">Price</h2>
-                <div class="price__description-wrap">
-                    <p class="price__description md-font">
-                        料金は<span class="strong-font">幅広いメニュー</span>を用意しております。
-                    </p>
-                    <p class="price__description md-font">
-                        LP制作、Wordpress制作、<br class="sp-br">デザイン込みの制作の料金ほか。
-                    </p>
-                    <p class="price__description md-font">
-                        既存サイトのWordpress化、<br class="sp-br">レスポンシブ化、修正のみの料金
-                    </p>
-                    <p class="price__description md-font">
-                        Wordpress自作テーマの場合の料金、<br class="sp-br">既存テーマを使用した場合の料金なども、記載しております。
-                    </p>
-                </div>
-                <div class="price_link-wrap">
-                    <p class="price__link-description md-font">
-                        興味がありましたら、以下の料金表ページをご覧ください。
-                    </p>
-                    <a href="./price.html" class="price-table__link">料金表</a>
-                </div>
-            </div>
-        </section> -->
+        </section>        
     
         <!-- 私ができること -->
         <section id="skill">
@@ -119,7 +107,7 @@
             <div class="container">
                 <h2 class="section__hdl skill__hdl md-hdl">My Skill</h2>
                     <div class="section__inner">
-                        <ul class="skill__list">
+                    <ul class="skill__list">
                             <li class="skill__item">
                                 <div class="skill__img-wrap">
                                     <img src="<?php echo esc_url( get_template_directory_uri() ). '/img/web_create.png'; ?>" alt="コーディングのイメージ画像" class="skill__img">
@@ -127,41 +115,42 @@
                                 </div>
                                 <div class="skill__description">
                                     <p class="skill__description-text md-font">                                        
-                                        HTMLは適切なタグ(SEOに好ましい)を使用、CSSはSassでメンテナンス性を高め、
-                                        JavaScriptでアニメーションや、その他動的な機能の実装ができます。
-                                        Wordpressは、オリジナルテーマの作成、既存テーマ(snow monkey、lightning pro)からの作成も可能です。
-                                        また、プラグインで内部SEOの設定/サイト軽量化なども致します。<br>
-                                        使用言語: HTML/CSS(Sass)/Java Script(jQuery)/PHP
+                                        HTMLは適切なタグ(SEOに好ましい)を使用、CSSはSassを使用可能。
+                                        JavaScriptでは、アニメーションの実装ができます。<br>
+                                        使用言語: HTML/CSS(Sass)/<br>
+                                        Java Script(jQuery)
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="skill__item">
+                                <div class="skill__img-wrap">
+                                    <img src="<?php echo esc_url( get_template_directory_uri() ). '/img/wordpress.png'; ?>" alt="Wordpress" class="skill__img">
+                                    <h3 class="skill__item-hdl sm-hdl">Wordpressサイト構築</h3>
+                                </div>
+                                <div class="skill__description">
+                                    <p class="skill__description-text md-font">
+                                        Wordpressのオリジナルテーマの制作ができます。
+                                        またプラグイン等を使い、内部SEO/セキュリティ対策/ページ読み込み速度向上も可能です。
+                                        Wordpressの既存テーマを使用したサイト制作の経験もございます。<br>
+                                        使用言語: HTML/CSS(Sass)/<br>
+                                        Java Script(jQuery)/PHP
                                     </p>
                                 </div>
                             </li>
                             <li class="skill__item">
                                 <div class="skill__img-wrap">
                                     <img src="<?php echo esc_url( get_template_directory_uri() ). '/img/director.png'; ?>" alt="ディレクターのイメージ画像" class="skill__img">
-                                    <h3 class="skill__item-hdl sm-hdl">Wevディレクション</h3>
+                                    <h3 class="skill__item-hdl sm-hdl">Webディレクション</h3>
                                 </div>
                                 <div class="skill__description">
                                     <p class="skill__description-text md-font">
                                         現在、Web制作会社でWebディレクションをしております。
                                         スケジュール管理・品質管理・顧客折衝などの経験がございます。
+                                        ディレクション経験があるので、エンジニアとしても、スケジュール感を持った動きができます。
                                     </p>
                                 </div>
-                            </li>
-                            <li class="skill__item">
-                                <div class="skill__img-wrap">
-                                    <img src="<?php echo esc_url( get_template_directory_uri() ). '/img/note.png'; ?>" alt="コンテンツ販売のイメージ画像" class="skill__img">
-                                    <h3 class="skill__item-hdl sm-hdl">SNSやブログの運用</h3>
-                                </div>
-                                <div class="skill__description">
-                                    <p class="skill__description-text md-font">
-                                        私は、SNS(Twitter)運用をし、
-                                        noteやbrainを使ったコンテンツ販売で、最高月18万円程稼ぎました。
-                                        始めは無料で配布していたコンテンツを、最終的に1万円で売れるようになりました。
-                                    </p>
-                                </div>
-                            </li>
+                            </li>                            
                         </ul>
-                        <!-- <a href="./price.html" id="price__link" class="lg-font">料金表</a> -->
                     </div>
             </div>
         </section>
@@ -174,15 +163,15 @@
             <div class="container">
                 <h2 class="section__hdl contact__hdl md-hdl">Contact</h2>
                 <div class="section__inner">
-                    <div class="contact__wrap">
-                        <!-- <p class="section__text contact__text md-font">
-                            24時間、いつでもお気軽にお問い合わせよろしくお願いします。
-                        </p> -->
-                        <p class="section__text contact__text md-font">
-                            メールアドレス<br>araiyuuuki96@yahoo.co.jp
-                        </p>
-                        <a href="./contact" id="contact__link" class="lg-font">CONTACT</a>
-                    </div>
+                    <p class="section__text contact__text md-font">
+                        お気軽にお問い合わせください。
+                    </p>
+                    <p class="section__text contact__text md-font">
+                        メールアドレス<br>araiyuuuki96@yahoo.co.jp
+                    </p>
+                    <a href="./contact" id="contact__link" class="lg-font  slide-bg">CONTACT</a>
+                    <!-- <div class="contact__wrap">
+                    </div> -->
                 </div>
             </div>
             

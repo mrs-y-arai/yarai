@@ -6,7 +6,7 @@ Template Name: お問い合わせページ
 <?php get_header(); ?>
 
 <div class="slideIn sub-page__hdl-wrap">
-    <h2 class="sub-page__hdl about-page__hdl md-hdl fadeIn">Contact</h2>
+    <h1 class="sub-page__hdl about-page__hdl md-hdl fadeIn">Contact</h1>
     <?php get_template_part('template-parts/bread-crumb'); ?>
 </div>
 

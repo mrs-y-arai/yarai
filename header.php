@@ -122,11 +122,11 @@
     <header id="header__app">
         <div class="container">
             <div class="header__inner">
-                <h1 class="site__icon">
+                <p class="site__icon">
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="site__logo-link">
                         <img src="<?php echo esc_url( get_template_directory_uri() ). '/img/logo.png'; ?>" alt="サイトロゴ" class="site__icon-img">
                     </a>
-                </h1>
+                </p>
                 
                 <div class="hamburger-menu" v-on:click="isActive=!isActive">
                     <span class="hamburger-line" v-bind:class="{'line-active':isActive}"></span>

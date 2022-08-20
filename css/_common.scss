@@ -24,63 +24,22 @@ $maxbreakpointTablet: 1024px;
     height: $btn-height;
     background-color: $white;
     line-height: $btn-height;
-    color: $black;
+    color: $yellow;
     border: 1px solid $yellow;
-    border-radius: 5px;
+    border-radius: 3px;
     display: block;
     margin: 0 auto;
     text-align: center;
     position: relative;
     margin-top: 4rem;
+    font-weight: bold;
+    border-radius: 3vw;
 
     @include MobileBreakPoint($maxbreakpointMobile) {
         margin-top: 3rem;       
-    }
-
-    &:before {
-        content: '';
-        display: inline-block;
-        width: 20px;
-        height: 1px;
-        background-color: $black;
-        position: absolute;
-        top: 50%;
-        right: 10px;
-        transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transition-duration: 1s;
-    }
-
-    &:after {
-        content: '';
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        border-left: 1px solid $black;
-        border-top: 1px solid $black;
-        position: absolute;
-        top: 50%;
-        right: 15px;
-        transform: translate(-50%, -50%) rotate(135deg);
-        -webkit-transform: translate(-50%, -50%) rotate(135deg);
-        -ms-transform: translate(-50%, -50%) rotate(135deg);
-        transition-duration: 1s;
-    }
-
-    &:hover {
-        color: $white;
-        background-color: $yellow;
-        
-        &:before {
-            background-color: $white;
-        }
-
-        &:after {
-            border-color: $white;
-        }
-    }
+    }        
 }
+
 // セクション右上の角
 
 
@@ -180,8 +139,8 @@ $yellow: #E0B314;
 $gley: #C4C4C4;
 $white: #ffffff;
 $blue: #1C31F5;
-$light-gley: #f9f9f9;
 $red: #EF6D6D;
+$light-gley:#F6F6F6;
 
 // フォントサイズ
 html {
@@ -201,14 +160,14 @@ html {
 }
 
 .md-hdl {
-    font-size: 4rem;
+    font-size: 5rem;
 
     @include MobileBreakPoint($maxbreakpointTablet) {
-        font-size: 4vw;
+        font-size: 5vw;
     }
 
     @include MobileBreakPoint($maxbreakpointMobile) {
-        font-size: 2.4rem;
+        font-size: 3rem;
     }
 }
 
@@ -303,6 +262,12 @@ body {
     font-size: 16px;
 }
 
+h1 {
+    position: relative;
+    display: block;
+    z-index: 900;
+}
+
 h2 {
     position: relative;
     display: block;
@@ -327,6 +292,7 @@ p {
 }
 
 section {
+
     position: relative;
     width: 100%;
     height: auto;
@@ -363,9 +329,26 @@ main {
 
     section {
 
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 70px;
+        padding-bottom: 100px;
         box-sizing: border-box;
+
+        @include MobileBreakPoint($maxbreakpointTablet) {
+
+            padding-top: 4.8vw;
+            padding-bottom: 7vw;
+        }
+
+        @include MobileBreakPoint($maxbreakpointMobile) {
+
+            padding-top: 7vw;
+            padding-bottom: 12vw;
+        }
+
+        &:nth-of-type(even) {
+
+            background-color: $light-gley;
+        }
     }
 
     #contact {
@@ -412,32 +395,24 @@ main {
     display: block !important;
 }
 
-.contact__wrap {
+#contact .section__inner {
+
     width: 80%;
-    background-color: $white;
     margin: 0 auto;
-    padding: 30px 20px ;
     box-sizing: border-box;
-    background-color: $light-gley;
-    border: 2px solid $gley;
-    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.3);
-    border-radius: 5px;
 
     .contact__text {
-        text-align: center;
 
-        &:first-of-type {
-            margin-bottom: 20px;
-        }
+        text-align: center;
     }
 
 
     #contact__link {
         @include moreBtnMaker($btn-width: 190px, $btn-height: 50px);
-        margin-top: 5px;
+        margin-top: 2rem;        
 
         @include MobileBreakPoint($maxbreakpointMobile) {
-            margin-top: 5px;
+            margin-top: 1rem;
             width: 50vw;
         }
     }
@@ -450,16 +425,11 @@ li {
 a {
     color: $black;
     text-decoration: none;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
 
     &:hover {
         color: $yellow;
     }
-}
-
-section {
-
-    margin-bottom: 7rem;
 }
 
 .container {
@@ -476,8 +446,40 @@ section {
 }
 
 .more-link {
-    @include moreBtnMaker;
+    @include moreBtnMaker;    
+}
 
+.link-text {
+    position: relative;
+    display: inline-block;
+
+    &::before {
+
+        content: '';
+        width: 25px;
+        height: 2px;
+        background-color: #161616;
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: -35px;
+    }   
+}
+
+.link-text:hover {
+
+    color: $yellow;
+    letter-spacing: 2px;
+
+    &::before {
+
+        background-color: $yellow;   
+    }
+
+    &::after {
+
+        background-color: $yellow;   
+    }
 }
 
 .site__icon {
@@ -570,6 +572,25 @@ header {
         }
     }
 }
+#menu-item-15 a {
+
+    &::after {
+
+        content: "\f08e";
+        font-family: FontAwesome;
+	    margin-left: 5px;
+    }
+}
+
+#menu-item-52 a {
+
+    &::after {
+
+        content: "\f08e";
+        font-family: FontAwesome;
+	    margin-left: 5px;
+    }
+}
 
 // スマホ用メニュー
 // ハンバーガーメニュー
@@ -635,6 +656,11 @@ header {
     transform: translate( -60vw, 0);
     transition-duration: 0.5s;
     display: none;
+
+    @include MobileBreakPoint($maxbreakpointMobile) {
+
+        display: block;
+    }
 }
 
 .mobile__nav {
@@ -642,7 +668,7 @@ header {
     transform: translate( 40vw,0);
     position: absolute;
     top: 0;
-    right: 0;
+    right: 0;   
 }
 
  @include MobileBreakPoint($maxbreakpointMobile) {
@@ -656,7 +682,7 @@ header {
         background-color: $white;
         transform: translate( 40vw,0);
         transition-duration: 0.5s;
-        display: none;
+        display: block;
 
         .mobile-header__nav-list {
             display: flex;
@@ -683,14 +709,7 @@ header {
                 a {
                     font-size: 2rem;
                 }
-
-
-                // &:last-of-type {
-
-                //     .mobile-header__nav-link {
-                //         font-size: 3rem;
-                //     }
-                // }
+                
             }
         } 
     }
@@ -733,6 +752,8 @@ header {
         .page__lead {
             text-align: center;
             margin-top: 7rem;
+            display: block;
+            font-weight: normal;
 
             @include MobileBreakPoint($maxbreakpointMobile) {
 
@@ -744,30 +765,18 @@ header {
             }
         }
 
-        #top-works__link {
+        .top-works__link {
             @include moreBtnMaker($btn-width: 560px, $btn-height: 101px);
-            background-color: $yellow;
-            color: $black;
+            background-color: $white;
+            color: $yellow;
             margin-top: 7rem;
+            font-weight: bold;
 
             @include MobileBreakPoint($maxbreakpointMobile) {
                 width: 80%;
                 height: 15vw;
                 line-height: 15vw;
                 margin-top: 4rem;
-            }
-
-            &:hover {
-                background-color: $white;
-                color: $yellow;
-
-                &:before {
-                    background-color: $yellow;
-                }
-        
-                &:after {
-                    border-color: $yellow;
-                }
             }
 
             span {
@@ -788,13 +797,13 @@ header {
 
     .section__inner {
         width: 100%;
-        height: 520px;
+        height: auto;
         display: flex;
         justify-content: space-between;
         position: relative;
 
         @include MobileBreakPoint($maxbreakpointTablet) {
-            height: 50vw;
+            height: auto;
         }
 
         @include MobileBreakPoint($maxbreakpointMobile) {
@@ -804,37 +813,46 @@ header {
             margin-top: 4rem;
         }
 
-        .yellow-bg {
-            width: 600px;
-            height: 400px;
-            background-color:rgba(224,179,20,0.9);;
+        .profile-img__wrap {
+            width: 350px;
+            height: 350px;
             position: absolute;
-            top: 15%;
-            right: 0;
-            z-index: 1;
+            top: -5%;
+            right: 5%;
+            z-index: 3;
+            overflow: hidden;
+            border-radius: 3vw;
 
             @include MobileBreakPoint($maxbreakpointTablet) {
-                width: 55vw;
-                height: 30vw;
-                top: 18%;
+
+                width: 26vw;
+                height: 26vw;
             }
 
             @include MobileBreakPoint($maxbreakpointMobile) {
                 display: none;
             }
+
+            .profile-img {
+
+                width: 100%;
+                height: auto;
+            }
         }
 
         .profile-text__wrap {
-            width: 70%;
-            height: auto;
+            width: 90%;
+            height: 80%;
             box-sizing: border-box;
-            padding: 1rem 2rem;
+            padding: 3rem 4rem 8rem 4rem;
             z-index: 2;
+            background-color: #FFFBEF;
+            border-radius: 3vw;
 
             @include MobileBreakPoint($maxbreakpointMobile) {
-                width: 90%;
+                width: 100%;
                 margin: 0 auto;
-                padding: 5vw 0;
+                padding: 5vw 6vw;
             }
 
             .profile-text__title {
@@ -856,15 +874,13 @@ header {
 
             .profile-text {
                 line-height: 1.8;
-
-                &:nth-child(2),&:nth-child(5) {
-                    margin-bottom: 3rem;
-
-                    @include MobileBreakPoint($maxbreakpointMobile) {
-                        margin-bottom: 2rem;
-                    }
-                }
             }
+
+            .profile-text__link {
+
+                margin-top: 2rem;
+            }
+
         }
     }
 
@@ -975,7 +991,6 @@ header {
                     .works__item-link {
 
                         margin-top: 15px;
-                        text-decoration: underline;
                     }
             }
         }
@@ -1180,3 +1195,45 @@ footer {
     }
 }
 
+// アニメーション
+// 文字広がる
+.letter-spacing {
+
+    &:hover {
+
+        letter-spacing: 2px;
+    }
+}
+
+// 左から背景色
+.slide-bg {
+    position: relative;
+    overflow: hidden;
+    color: $white;
+    z-index: 1;
+
+    &:before {
+
+        content: '';
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background-color: $yellow !important;
+        transform: translateX(-100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: transform 0.5s;
+        z-index: -1;
+    }
+
+    &:hover {
+
+        color: $white !important;
+
+        &:before {
+
+            transform: none;
+        }
+    }
+}

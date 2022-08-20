@@ -1,14 +1,14 @@
 
 .sub-page__hdl-wrap {
     width: 48%;
-    height: 150px;
+    height: 170px;
     background-color: $yellow;
     position: relative;
     margin-top: 8rem;
 
     @include MobileBreakPoint($maxbreakpointMobile) {
         width: 80%;
-        height: 120px;
+        height: 135px;
     }
     
 
@@ -18,17 +18,17 @@
         position: absolute;
         background-color: $yellow;
         top: 0;
-        right: -27px;
-        width: 60px;
-        height: 150px;
+        right: -35px;
+        width: 70px;
+        height: 170px;
         -webkit-transform: skew(20deg);
 	    -moz-transform: skew(20deg);
         -o-transform: skew(20deg);
-        border-radius: 5px;
+        border-radius: 5px 5px 20px 5px;
 
         @include MobileBreakPoint($maxbreakpointMobile) {
 
-            height: 120px;            
+            height: 135px;            
         }
     }
 
@@ -77,7 +77,7 @@
     }
 
     .privacy-policy-page__hdl {
-        width: 300px;
+        width: 350px;
         text-align: center;
         @include hdlJapaneseMaker($hdlName:"プライバシーポリシー");
         @include hdlCircle($circleTop: 55%, $circleLeft: 70%, $bg-color: $white);
@@ -154,6 +154,8 @@
 
     .md-hdl {
         position: relative;
+        margin-bottom: 4rem;
+        text-align: center;
 
         &::after {
             content: '';
@@ -172,9 +174,18 @@
     .profile__sec {
 
         .profile__inner {
-            width: 100%;
+            width: 93%;
             box-sizing: border-box;
-            padding: 2rem 2rem;
+            padding: 4rem 3rem;
+            background-color: $light-gley;
+            margin: 0 auto;
+            border-radius: 3vw;
+
+            @include MobileBreakPoint($maxbreakpointMobile) {
+
+                width: 90%;
+                padding: 2rem 2rem;
+            }
 
             .profile-head {
                 width: 70%;
@@ -193,17 +204,21 @@
                 }
 
                 .profile-head__img-wrap {
-                    width: 250px;
-                    height: auto;
-
+                    width: 350px;
+                    height: 350px;
+                    border-radius: 3vw;
+                    overflow: hidden;
+                    
                     @include MobileBreakPoint($maxbreakpointTablet) {
-                        width: 200px;
-                        height: auto;
+
+                        width: 24.3vw;
+                        height: 24.3vw;
                     }
 
                     @include MobileBreakPoint($maxbreakpointMobile) {
-                        width: 150px;
-                        height: auto;
+                        
+                        width: 27vw;
+                        height: 27vw;
                     }
 
                     .profile-head__img {
@@ -218,7 +233,7 @@
             
     
             .profile-text__detail {
-                width: 70%;
+                width: 80%;
                 height: auto;
                 box-sizing: border-box;
                 margin: 0 auto;
@@ -263,18 +278,29 @@
         justify-content: space-between;
 
         .works__item {
-            width: 460px;
-            height: 530px;
-            box-shadow: 3px 3px 3px 3px rgba(224,179,20,0.5);
+            width: 480px;
+            height: 580px;
             margin-top: 0;
+            background-color: $light-gley;
+            border-radius: 3vw;
 
             &:nth-of-type(2n) {
                 margin-top: 8rem;
             }
 
             @include TabletBreakPoint($maxbreakpointTablet) {
-                width: 40vw;
-                height: 50vw;
+                width: 93vw;
+                height: auto;
+                padding-bottom: 30px;
+                margin-top: 15vw;
+
+                &:nth-of-type(2n) {
+                    margin-top: 15vw;
+                }
+
+                &:first-of-type {
+                    margin-top: 0;
+                }
             }
 
             @include MobileBreakPoint($maxbreakpointMobile) {
@@ -294,6 +320,8 @@
 
             .works__item-wrap {
                 width: 100%;
+                box-sizing: border-box;
+                padding: 2rem 3rem;
 
                 .works__img-wrap {
                     width: 100%;
@@ -301,7 +329,7 @@
                     overflow: hidden;
 
                     @include TabletBreakPoint($maxbreakpointTablet) {
-                        height: 23vw;
+                        height: 50vw;
                     }
 
                     @include MobileBreakPoint($maxbreakpointMobile) {
@@ -323,6 +351,10 @@
                     display: flex;
                     flex-direction: column;
 
+                    .works__item-hdl {
+                        text-align: center;
+                    }
+
                     .works__description {
                         box-sizing: border-box;
                         padding-top: 1rem;
@@ -330,10 +362,19 @@
                 }
 
                 .works__link {
-                    text-decoration: underline;
+                    
+                    width: fit-content;
+                    margin: 0 auto;
                     display: inline-block;
-                    text-align: center;
-                    margin-top: 15px;
+                    margin-top: 20px;
+
+                    @include TabletBreakPoint($maxbreakpointTablet) {
+                        margin-top: 4vw;
+                    }
+
+                    @include MobileBreakPoint($maxbreakpointMobile) {
+                        margin-top: 4vw;
+                    }
                 }
             }
         }
@@ -464,26 +505,26 @@
 
     input[type="text"] {
         width: 100%;
-        padding: 5px 7px;
+        padding: 10px 7px;
         box-sizing: border-box;
         border: 1px solid rgba(0, 0, 0, 0.3);
-        border-radius: 3px;
+        border-radius: 10px;
 
-        // &::placeholder {
-        //     color: #000;
-        // }
+        @include MobileBreakPoint($maxbreakpointMobile) {
+            padding: 1.5vw 1.5vw;
+        }
     }
 
     input[type="email"] {
         width: 100%;
-        padding: 5px 7px;
+        padding: 10px 7px;
         box-sizing: border-box;
         border: 1px solid rgba(0, 0, 0, 0.3);
-        border-radius: 3px;
+        border-radius: 10px;
 
-        // &::placeholder {
-        //     color: #000;
-        // }
+        @include MobileBreakPoint($maxbreakpointMobile) {
+            padding: 1.5vw 1.5vw;
+        }
     }
 
     .radio-59 {
@@ -495,14 +536,14 @@
 
     textarea {
         width: 100%;   
-        padding: 5px 7px;
+        padding: 10px 7px;
         box-sizing: border-box;
         border: 1px solid rgba(0, 0, 0, 0.3);
-        border-radius: 3px;
+        border-radius: 10px;
 
-        // &::placeholder {
-        //     color: #000;
-        // }
+        @include MobileBreakPoint($maxbreakpointMobile) {
+            padding: 1.5vw 1.5vw;
+        }
     }
 
     input[type="checkbox"] {
@@ -515,16 +556,21 @@
         -webkit-appearance: none;
         @include moreBtnMaker( $btn-width: 200px, $btn-height: 48px );
         margin: 0 auto;
-        border-radius: 10px;
+        border-radius: 3vw;
         transition-duration: 1s;
-        background-color: $yellow;
         cursor: pointer;
         font-size: 2rem;
         line-height: 36px;
+        -moz-box-shadow: 0px 0px 8px 1px rgba(224, 179, 20, 0.8);
+        -webkit-box-shadow: 0px 0px 8px 1px rgba(224, 179, 20, 0.8);
+        -ms-box-shadow: 0px 0px 8px 1px rgba(224, 179, 20, 0.8);
+        box-shadow: 0px 0px 8px 1px rgba(224, 179, 20, 0.8);
+        border: none;
 
         &:hover {
-            background-color: $white;
-            color: $yellow;
+            box-shadow: none;
+            background-color: $yellow;
+            color: $white;
         }
     }
 
@@ -679,6 +725,10 @@
             text-align: center;
         }
 
+        .sm-hdl {
+            text-align: center;
+        }
+
         .md-font {
             margin-top: 1.5rem;
             text-align: center;
@@ -757,11 +807,6 @@
     
                     th {
                         background-color: $yellow;   
-                    }
-    
-                    td {
-    
-                        background-color: #F0F0F0;
                     }
                 }
             }

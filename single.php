@@ -23,7 +23,7 @@
             </div>
 
 
-            <a href="<?php echo home_url(); ?>/works" class="archive__link-btn" class="lg-font">他の制作実績を見る</a>
+            <a href="<?php echo home_url(); ?>/works" class="archive__link-btn lg-font slide-bg">他の制作実績を見る</a>
 
         </div>
 
