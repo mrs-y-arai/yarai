@@ -60,9 +60,10 @@ function watch() {
 
 function browserInit(done) {
     browserSync.init({
-        server: {
-            baseDir: "./public"
-        }
+        // server: {
+        //     baseDir: "./public"
+        // }
+        proxy: "http://yarai.local/dev"
     });
 
     done();

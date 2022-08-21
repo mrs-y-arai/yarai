@@ -20,7 +20,7 @@ Template Name: 自己紹介ページ
                 <div class="profile__inner">
                     <div class="profile-head">
                         <div class="profile-head__img-wrap">
-                            <img src="<?php echo esc_url( get_template_directory_uri() ). '/img/profile_img.jpg'; ?>" alt="荒井 勇己" class="profile-head__img">
+                            <img src="<?php echo esc_url( get_template_directory_uri() ). '/public/assets/img/profile_img.jpg'; ?>" alt="荒井 勇己" class="profile-head__img">
                         </div>
                         <div class="profile-head__text">
                             <p class="profile__name lg-font">名前:荒井 勇己</p>

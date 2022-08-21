@@ -124,7 +124,7 @@
             <div class="header__inner">
                 <p class="site__icon">
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="site__logo-link">
-                        <img src="<?php echo esc_url( get_template_directory_uri() ). '/img/logo.png'; ?>" alt="サイトロゴ" class="site__icon-img">
+                        <img src="<?php echo esc_url( get_template_directory_uri() ). '/public/assets/img/logo.png'; ?>" alt="サイトロゴ" class="site__icon-img">
                     </a>
                 </p>
                 

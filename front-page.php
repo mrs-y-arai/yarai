@@ -43,7 +43,7 @@
                         <a href="./about" id="" class="lg-font link-text profile-text__link">View more</a>
                     </div>
                     <div class="profile-img__wrap">
-                        <img src="<?php echo esc_url( get_template_directory_uri() ). '/img/profile_img.jpg'; ?>" alt="荒井 勇己" class="profile-img">
+                        <img src="<?php echo esc_url( get_template_directory_uri() ). '/public/assets/img/profile_img.jpg'; ?>" alt="荒井 勇己" class="profile-img">
                     </div>                    
                 </div>
             </div>
@@ -110,7 +110,7 @@
                     <ul class="skill__list">
                             <li class="skill__item">
                                 <div class="skill__img-wrap">
-                                    <img src="<?php echo esc_url( get_template_directory_uri() ). '/img/web_create.png'; ?>" alt="コーディングのイメージ画像" class="skill__img">
+                                    <img src="<?php echo esc_url( get_template_directory_uri() ). '/public/assets/img/web_create.png'; ?>" alt="コーディングのイメージ画像" class="skill__img">
                                     <h3 class="skill__item-hdl sm-hdl">Webサイトコーディング</h3>
                                 </div>
                                 <div class="skill__description">
@@ -124,7 +124,7 @@
                             </li>
                             <li class="skill__item">
                                 <div class="skill__img-wrap">
-                                    <img src="<?php echo esc_url( get_template_directory_uri() ). '/img/wordpress.png'; ?>" alt="Wordpress" class="skill__img">
+                                    <img src="<?php echo esc_url( get_template_directory_uri() ). '/public/assets/img/wordpress.png'; ?>" alt="Wordpress" class="skill__img">
                                     <h3 class="skill__item-hdl sm-hdl">Wordpressサイト構築</h3>
                                 </div>
                                 <div class="skill__description">
@@ -139,7 +139,7 @@
                             </li>
                             <li class="skill__item">
                                 <div class="skill__img-wrap">
-                                    <img src="<?php echo esc_url( get_template_directory_uri() ). '/img/director.png'; ?>" alt="ディレクターのイメージ画像" class="skill__img">
+                                    <img src="<?php echo esc_url( get_template_directory_uri() ). '/public/assets/img/director.png'; ?>" alt="ディレクターのイメージ画像" class="skill__img">
                                     <h3 class="skill__item-hdl sm-hdl">Webディレクション</h3>
                                 </div>
                                 <div class="skill__description">
