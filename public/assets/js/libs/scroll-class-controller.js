@@ -16,13 +16,12 @@ class scrollClassController {
                 if( entry.isIntersecting ) {
     
                     entry.target.classList.add('inview');
-        
                 } else {
         
                     entry.target.classList.remove('inview');
                 }
             });
-        };            
+        };
 
         this.io = new IntersectionObserver(observe);
         console.log(this.els);

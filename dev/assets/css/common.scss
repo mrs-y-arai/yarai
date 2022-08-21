@@ -401,21 +401,23 @@ main {
     right: 0;
     transition-duration: 0.8s;
 
+    &.inview {
+
+        height: 90px;
+        border-right: 90px solid $yellow;
+        border-top: 90px solid $yellow;
+        border-left: 90px solid transparent;
+        border-bottom: 90px solid transparent;
+    }
+
     @include MobileBreakPoint($maxbreakpointMobile) {
         width: 12vw;
-    }
-}
 
-.triangle---active {
-    height: 90px;
-    border-right: 90px solid $yellow;
-    border-top: 90px solid $yellow;
-    border-left: 90px solid transparent;
-    border-bottom: 90px solid transparent;
+        &.inview {
 
-    @include MobileBreakPoint($maxbreakpointMobile) {
-        height: 12vw;
-        border-width: 12vw;
+            height: 12vw;
+            border-width: 12vw;
+        }
     }
 }
 
@@ -532,10 +534,6 @@ a {
     @include MobileBreakPoint($maxbreakpointMobile) {
         margin-top: 3rem;       
     }
-}
-
-.works__img---active {
-    transform:scale(1.2,1.2);
 }
 
 .yellow-line {
@@ -999,7 +997,12 @@ header {
                         .works__img {
                             width: 100%;
                             display: block;
-                            transition-duration: 1s;
+                            transition-duration: 0.5s;
+
+                            &:hover {
+
+                                transform:scale(1.1,1.1);
+                            }
                         }
                     }
 

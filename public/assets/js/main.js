@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
                 const ta = new TextAnimation(entry.target);
                 ta._animate();
-                observer.unobserve(entry.target);                
+                observer.unobserve(entry.target);
 
             } else {
             }
@@ -42,6 +42,10 @@ scrollTopBtn.addEventListener('click', function(){
 // スクロールトップボタンにアニメーション
 const scrollTop = new scrollClassController('#scroll-top');
 
+/////////////////////////////////////////
+// 三角形のアニメーション
+/////////////////////////////////////////
+const triangleAnimation = new scrollClassController('.triangle');
 
 /////////////////////////////////////////
 // ハンバーガーメニュー

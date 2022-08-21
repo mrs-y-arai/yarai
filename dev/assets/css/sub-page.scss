@@ -482,7 +482,11 @@ $light-gley:#F6F6F6;
                     .works__img {
                         width: 100%;
                         height: auto;
-                        transition-duration: 0.8s;
+                        transition-duration: 0.5s;
+
+                        &:hover {
+                            transform:scale(1.1,1.1);
+                        }
                     }
                 }
 

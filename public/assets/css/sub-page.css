@@ -440,7 +440,11 @@
 .works__main-inner .works__list .works__item .works__item-wrap .works__img-wrap .works__img {
 	width: 100%;
 	height: auto;
-	transition-duration: 0.8s;
+	transition-duration: 0.5s;
+}
+
+.works__main-inner .works__list .works__item .works__item-wrap .works__img-wrap .works__img:hover {
+	transform: scale(1.1, 1.1);
 }
 
 .works__main-inner .works__list .works__item .works__item-wrap .works__description-wrap {

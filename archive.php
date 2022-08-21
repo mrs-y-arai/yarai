@@ -24,7 +24,9 @@
         <li class="works__item">
             <div class="works__item-wrap">
                 <div class="works__img-wrap">
-                    <img src="<?php echo get_the_post_thumbnail_url( get_the_ID(), 'full' ); ?>" alt="<?php echo CFS()->get( 'works_title' );?>" class="works__img">
+                    <a href="<?php the_permalink(); ?>" class="works__img-link">
+                        <img src="<?php echo get_the_post_thumbnail_url( get_the_ID(), 'full' ); ?>" alt="<?php echo CFS()->get( 'works_title' );?>" class="works__img">
+                    </a>
                 </div>
                 <div class="works__description-wrap">
                     <h2 class="works__item-hdl sm-hdl"><?php echo CFS()->get( 'works_title' );?></h2>

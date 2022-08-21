@@ -175,7 +175,7 @@ main {
 	transition-duration: 0.8s;
 }
 
-.triangle---active {
+.triangle.inview {
 	height: 90px;
 	border-top: 90px solid #E0B314;
 	border-right: 90px solid #E0B314;
@@ -305,10 +305,6 @@ a:hover {
 	width: 100%;
 	margin: 0 auto;
 	margin-top: 6rem;
-}
-
-.works__img---active {
-	transform: scale(1.2, 1.2);
 }
 
 .yellow-line {
@@ -692,7 +688,11 @@ header .header__inner .pc__nav .header__nav-list .header__nav-item:first-of-type
 #works .section__inner .works__list .works__item .works__img-wrap .works__img {
 	display: block;
 	width: 100%;
-	transition-duration: 1s;
+	transition-duration: 0.5s;
+}
+
+#works .section__inner .works__list .works__item .works__img-wrap .works__img:hover {
+	transform: scale(1.1, 1.1);
 }
 
 #works .section__inner .works__list .works__item .works__description {
@@ -1115,7 +1115,7 @@ main {
 	width: 12vw;
 }
 
-.triangle---active {
+.triangle.inview {
 	height: 12vw;
 	border-width: 12vw;
 }
