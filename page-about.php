@@ -15,7 +15,7 @@ Template Name: 自己紹介ページ
         <div class="container">
             <section class="profile__sec">
     
-                <h2 class="profile__hdl md-hdl yellow-line">Profile</h2>
+                <h2 class="profile__hdl md-hdl yellow-line fade-in-text">Profile</h2>
     
                 <div class="profile__inner">
                     <div class="profile-head">

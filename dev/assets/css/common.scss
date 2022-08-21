@@ -133,6 +133,38 @@ $maxbreakpointTablet: 1024px;
     transform: scale(1.2,1.2);
 }
 
+
+// テキストフェードインアニメーション
+.char {
+
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(-30px);
+    transition-duration: 1s;
+}
+
+.inview {
+    
+    .char {
+
+        animation-name: kf-animate-char;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes kf-animate-char {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
 // color
 $black: #161616;
 $yellow: #E0B314;
@@ -752,28 +784,13 @@ header {
 
         .main-visual__title {
 
-            text-align: center;
-
-            .char {
-
-                color: #1C31F5;
-                transform: translateY(-30px);
-            }
-
-            &.inview {
-                
-                .char {
-
-
-
-                }
-            }
+            text-align: center;            
         }
 
 
         .page__lead {
             text-align: center;
-            margin-top: 7rem;
+            margin-top: 4rem;
             display: block;
             font-weight: normal;
 

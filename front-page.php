@@ -2,7 +2,7 @@
 <div class="main-visual">
         <div class="container">
             <div class="main-visual__inner">
-                <h1 class="page__hdl lg-hdl main-visual__title">I AM ENGINEER</h1>
+                <h1 class="page__hdl lg-hdl main-visual__title fade-in-text">I AM ENGINEER</h1>
                 <strong class="page__lead sm-hdl">
                     ただ作るだけではなく、売上向上、アクセス増加<br>
                     に繋がるよう貢献したい。
@@ -18,7 +18,7 @@
         <section id="about">
             <div id="triangle" class="triangle"></div>
             <div class="container">
-                <h2 class="section__hdl about__hdl md-hdl">About</h2>
+                <h2 class="section__hdl about__hdl md-hdl fade-in-text">About</h2>
                 <div class="section__inner">
                     <div class="profile-text__wrap">
                         <h3 class="profile-text__title xl-font"><span>私</span>について</h3>
@@ -53,7 +53,7 @@
         <section id="works">
             <div id="triangle" class="triangle"></div>
                 <div class="container">
-                    <h2 class="section__hdl works__hdl md-hdl">Works</h2>
+                    <h2 class="section__hdl works__hdl md-hdl fade-in-text">Works</h2>
                             <div class="section__inner">
                                 <ul class="works__list">
 
@@ -105,7 +105,7 @@
         <section id="skill">
             <div id="triangle" class="triangle"></div>
             <div class="container">
-                <h2 class="section__hdl skill__hdl md-hdl">My Skill</h2>
+                <h2 class="section__hdl skill__hdl md-hdl fade-in-text">My Skill</h2>
                     <div class="section__inner">
                     <ul class="skill__list">
                             <li class="skill__item">
@@ -161,7 +161,7 @@
         <section id="contact">
             <div id="triangle" class="triangle"></div>
             <div class="container">
-                <h2 class="section__hdl contact__hdl md-hdl">Contact</h2>
+                <h2 class="section__hdl contact__hdl md-hdl fade-in-text">Contact</h2>
                 <div class="section__inner">
                     <p class="section__text contact__text md-font">
                         お気軽にお問い合わせください。

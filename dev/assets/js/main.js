@@ -1,15 +1,21 @@
 document.addEventListener('DOMContentLoaded', function(){
+    
+    const taTexts = document.querySelectorAll('.fade-in-text');
+    
+    const cb = function(entries, observer) {
+        entries.forEach(entry => {
+            if(entry.isIntersecting) {
 
-    const el = document.querySelector('.main-visual__title');
-    // el.classList.add('inview');
-    const chars = el.innerHTML.trim().split("");    
+                const ta = new TextAnimation(entry.target);
+                ta._animate();
+                observer.unobserve(entry.target);                
 
-    el.innerHTML = chars.reduce((accu, curr) => {
+            } else {
+            }
+        });
+    }
 
-        console.log(`${accu}<span class="char">${curr}</span>`);
-        return `${accu}<span class="char">${curr}</span>`;
-    }, "");
-
-
+    const io = new IntersectionObserver(cb);
+    taTexts.forEach( taText => io.observe(taText) );
+    
 });
-
