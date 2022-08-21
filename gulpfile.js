@@ -78,6 +78,8 @@ function minJS() {
         // エラーメッセージの表示
         errorHandler: notify.onError( 'Error: <%= error.message  %>' )
     }))
+    // ファイルのコンパイル先
+    .pipe(gulp.dest("./public/assets/js/"))
     .pipe(uglify())
     .pipe(rename({
         suffix: ".min"

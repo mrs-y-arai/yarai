@@ -419,10 +419,6 @@ main {
     }
 }
 
-.scroll-top---active {
-    transform: translateY(0) !important;
-}
-
 .confirm-modal---active,.confirm__inner---active {
     display: block !important;
 }
@@ -1220,6 +1216,10 @@ footer {
         right: 20px;
         transform: translateY(70px);
         transition-duration: 1s;
+
+        &.inview {
+            transform: translateY(0);
+        }
 
         .scroll-top__image {
             width: 100%;

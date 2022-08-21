@@ -183,10 +183,6 @@ main {
 	border-left: 90px solid transparent;
 }
 
-.scroll-top---active {
-	transform: translateY(0) !important;
-}
-
 .confirm-modal---active,
 .confirm__inner---active {
 	display: block !important;
@@ -958,6 +954,10 @@ footer #scroll-top {
 	height: 130px;
 	transform: translateY(70px);
 	transition-duration: 1s;
+}
+
+footer #scroll-top.inview {
+	transform: translateY(0);
 }
 
 footer #scroll-top .scroll-top__image {
