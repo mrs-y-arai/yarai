@@ -18,22 +18,27 @@ add_action('after_setup_theme', 'my_setup');
 */
 function my_script_init()
 {
-    wp_enqueue_style('my-css-1', get_template_directory_uri() . '/css/style.min.css', array(), '1.0.0', 'all');
-	wp_enqueue_script('my-jq-1', 'https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js', array( 'jquery' ), '1.12.4', true);
-	wp_enqueue_script('my-js-1', get_template_directory_uri() . '/js/jq.js', array( 'jquery' ), '1.0.0', true);
+    wp_enqueue_style('my-css-1', get_template_directory_uri() . '/public/assets/css/reset.min.css', array(), '1.0.0', 'all');
+	wp_enqueue_style('my-css-2', get_template_directory_uri() . '/public/assets/css/common.min.css', array(), '1.0.0', 'all');
+	if( !is_home() || !is_front_page() ) {
+		wp_enqueue_style('my-css-3', get_template_directory_uri() . '/public/assets/css/sub-page.min.css', array(), '1.0.0', 'all');
+	}
+	wp_enqueue_script('my-js-1', 'https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js', array( 'jquery' ), '1.12.4', true);
+	wp_enqueue_script('my-js-2', get_template_directory_uri() . '/public/assets/js/jq.min.js', array( 'jquery' ), '1.0.0', true);
+	wp_enqueue_script('my-js-3', get_template_directory_uri() . '/public/assets/js/main.min.js', array( 'js' ), '1.0.0', true);
 	wp_enqueue_script('my-vue-1', 'https://cdn.jsdelivr.net/npm/vue@2.6.14');
 }
 add_action('wp_enqueue_scripts', 'my_script_init');
 
 // favicon設置
 function set_myfavicon() {
-	echo '<link rel="shortcut icon" type="image/x-icon" href="' . get_template_directory_uri() . '/img/favicon.ico">' . "\n";
+	echo '<link rel="shortcut icon" type="image/x-icon" href="' . get_template_directory_uri() . '/public/assets/img/favicon.ico">' . "\n";
 }
 add_action('wp_head', 'set_myfavicon');
 
 // 管理画面にfavicon設置
 function admin_favicon() {
-	echo '<link rel="shortcut icon" type="image/x-icon" href="' . get_template_directory_uri() . '/img/favicon.ico">' . "\n";
+	echo '<link rel="shortcut icon" type="image/x-icon" href="' . get_template_directory_uri() . '/public/assets/img/favicon.ico">' . "\n";
 }
 add_action('admin_head', 'admin_favicon');
 

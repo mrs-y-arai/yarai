@@ -2,7 +2,7 @@
 <div class="main-visual">
         <div class="container">
             <div class="main-visual__inner">
-                <h1 class="page__hdl lg-hdl">I AM ENGINEER</h1>
+                <h1 class="page__hdl lg-hdl main-visual__title">I AM ENGINEER</h1>
                 <strong class="page__lead sm-hdl">
                     ただ作るだけではなく、売上向上、アクセス増加<br>
                     に繋がるよう貢献したい。
