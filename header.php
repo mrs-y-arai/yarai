@@ -109,17 +109,13 @@
         }]
         }
         </script>
-    <?php } ?>    
-    <script>
-        setTimeout(function () {
-            document.getElementsByTagName("html")[0].classList.add("loading-delay");
-        }, 200);
-    </script>
+    <?php } ?>
 </head>
 <body id="body" <?php if( is_front_page()) :?>
     class="top-page"
 <?php endif; ?>>
-    <header id="header__app">
+<div id="global-wrapper">
+    <header>
         <div class="container">
             <div class="header__inner">
                 <p class="site__icon">
@@ -128,13 +124,13 @@
                     </a>
                 </p>
                 
-                <div class="hamburger-menu" v-on:click="isActive=!isActive">
-                    <span class="hamburger-line" v-bind:class="{'line-active':isActive}"></span>
-                    <span class="hamburger-line" v-bind:class="{'line-active':isActive}"></span>
-                    <span class="hamburger-line" v-bind:class="{'line-active':isActive}"></span>
+                <div class="hamburger-menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
                 </div>
 
-                <div class="yellow-modal" v-on:click="isActive=!isActive" v-bind:class="{'nav---active':isActive}"></div>
+                <div class="yellow-modal"></div>
 
                 <nav class="pc__nav">
                     <?php

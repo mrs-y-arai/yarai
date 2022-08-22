@@ -20,18 +20,22 @@
 
 .char {
 	display: inline-block;
-	transform: translateY(-30px);
+	transform: translateY(-50px);
 	opacity: 0;
-	transition-duration: 1s;
 }
 
 .inview .char {
 	-webkit-animation-name: kf-animate-char;
-	-webkit-animation-duration: 1s;
+	-webkit-animation-duration: 0.8s;
 	-webkit-animation-fill-mode: forwards;
-	animation-duration: 1s;
+	animation-duration: 0.8s;
 	animation-fill-mode: forwards;
 	animation-name: kf-animate-char;
+}
+
+.inview.main-visual__title .char {
+	-webkit-animation-delay: 0.4s;
+	animation-delay: 0.4s;
 }
 
 html {
@@ -72,15 +76,6 @@ html {
 
 .strong-font {
 	font-weight: 600;
-}
-
-.front-html {
-	visibility: hidden;
-}
-
-.front-html.wf-active,
-.front-html.loading-delay {
-	visibility: visible;
 }
 
 * {
@@ -172,7 +167,8 @@ main {
 	border-right: 90px solid #E0B314;
 	border-bottom: 0px solid transparent;
 	border-left: 0px solid transparent;
-	transition-duration: 0.8s;
+	transition-delay: 0.05s;
+	transition-duration: 1s;
 }
 
 .triangle.inview {
@@ -445,7 +441,7 @@ header .header__inner .pc__nav .header__nav-list .header__nav-item:first-of-type
 
 .main-visual {
 	width: 100%;
-	height: calc(100vh - 80px);
+	height: calc(100vh - 70px);
 	margin-top: 80px;
 	background-image: url(../img/main-visual.jpg);
 	background-position: center;

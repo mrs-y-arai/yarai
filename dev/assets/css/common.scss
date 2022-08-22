@@ -139,8 +139,7 @@ $maxbreakpointTablet: 1024px;
 
     display: inline-block;
     opacity: 0;
-    transform: translateY(-30px);
-    transition-duration: 1s;
+    transform: translateY(-50px);
 }
 
 .inview {
@@ -148,8 +147,15 @@ $maxbreakpointTablet: 1024px;
     .char {
 
         animation-name: kf-animate-char;
-        animation-duration: 1s;
+        animation-duration: 0.8s;
         animation-fill-mode: forwards;
+    }
+
+    &.main-visual__title {        
+        .char {
+                        
+            animation-delay: 0.4s;
+        }
     }
 }
 
@@ -271,16 +277,6 @@ html {
     font-weight: 600;
 }
 
-.front-html {
-    visibility: hidden;
-  }
-
-  .front-html.wf-active, .front-html.loading-delay {
-    visibility: visible;
-}
-
-
-
 * {
     padding: 0;
     margin: 0;
@@ -399,7 +395,8 @@ main {
     position: absolute;
     top: 0;
     right: 0;
-    transition-duration: 0.8s;
+    transition-duration: 1s;
+    transition-delay: 0.05s;
 
     &.inview {
 
@@ -407,7 +404,7 @@ main {
         border-right: 90px solid $yellow;
         border-top: 90px solid $yellow;
         border-left: 90px solid transparent;
-        border-bottom: 90px solid transparent;
+        border-bottom: 90px solid transparent;        
     }
 
     @include MobileBreakPoint($maxbreakpointMobile) {
@@ -754,7 +751,7 @@ header {
 // main-visual
 .main-visual {
     width: 100%;
-    height: calc( 100vh - 80px);
+    height: calc( 100vh - 70px);
     background-image: url(../img/main-visual.jpg);
     background-repeat: no-repeat;
     background-size: cover;
