@@ -610,6 +610,12 @@
 	color: #ffffff;
 }
 
+#contact__area .privacy-policy__wrap {
+	width: 70%;
+	margin: 0 auto;
+	text-align: center;
+}
+
 #contact__area .privacy-policy__link {
 	color: #E0B314;
 	text-decoration: underline;

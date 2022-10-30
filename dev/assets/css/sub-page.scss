@@ -721,6 +721,12 @@ $light-gley:#F6F6F6;
         }
     }
 
+    .privacy-policy__wrap {
+        width: 70%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
     .privacy-policy__link {
         color: $yellow;
         text-decoration: underline;
