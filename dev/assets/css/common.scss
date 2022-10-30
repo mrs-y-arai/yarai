@@ -767,7 +767,7 @@ header {
         width: 100%;
         height: auto;
         box-sizing: border-box;
-        padding-top: 5rem;
+        padding-top: 10rem;
 
         @include MobileBreakPoint($maxbreakpointMobile) {
             padding-top: 12rem;

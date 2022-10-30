@@ -24,7 +24,7 @@ Template Name: 自己紹介ページ
                         </div>
                         <div class="profile-head__text">
                             <p class="profile__name lg-font">名前:荒井 勇己</p>
-                            <p class="profile__age lg-font">年齢:25</p>
+                            <p class="profile__age lg-font">年齢:26</p>
                         </div>
                     </div>
                     <div class="profile-text__detail">
