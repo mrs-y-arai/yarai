@@ -62,3 +62,13 @@ yellowModal.addEventListener('click', function(){
 
     const hamburger = new hamburgerAnimation();
 });
+
+/////////////////////////////////////////
+// ローディングアニメーション
+/////////////////////////////////////////
+window.addEventListener('load', () => {
+    const loadingWrap = document.querySelector('.loading-wrap');
+    setTimeout(() => {
+        loadingWrap.classList.add( '---inactive' );
+    }, 700);
+},false)

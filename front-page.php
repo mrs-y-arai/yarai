@@ -1,16 +1,16 @@
 <?php get_header(); ?>
 <div class="main-visual">
-        <div class="container">
-            <div class="main-visual__inner">
-                <h1 class="page__hdl lg-hdl main-visual__title fade-in-text">I AM ENGINEER</h1>
-                <strong class="page__lead sm-hdl">
-                    ただ作るだけではなく、売上向上、コスト削減など<br>
-                    何かに貢献できる物づくりがしたい。
-                </strong>
-                <a href="./contact" class="xl-font top-works__link slide-bg">CONTACT</a>
-            </div>
+    <div class="container">
+        <div class="main-visual__inner">
+            <h1 class="page__hdl lg-hdl main-visual__title fade-in-text">I AM ENGINEER</h1>
+            <strong class="page__lead sm-hdl">
+                ただ作るだけではなく、売上向上、コスト削減など<br>
+                何かに貢献できる物づくりがしたい。
+            </strong>
+            <a href="./contact" class="xl-font top-works__link slide-bg">CONTACT</a>
         </div>
     </div>
+</div>
 
     <main>
 

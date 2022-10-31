@@ -1,56 +1,22 @@
-#global-wrapper {
-	opacity: 0;
-	transition: opacity 0.5s;
-}
-
-.pace-done #global-wrapper {
-	opacity: 1;
-}
-
-.pace {
-	-webkit-pointer-events: none;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-box-sizing: border-box;
-	-o-box-sizing: border-box;
-	-webkit-background-clip: padding-box;
-	-moz-background-clip: padding;
-	box-sizing: border-box;
-	z-index: 2000;
+.loading-wrap {
+	display: flex;
+	z-index: 999;
 	position: fixed;
-	top: 12px;
-	right: 0;
-	bottom: 0;
+	top: 0;
 	left: 0;
-	width: 200px;
-	height: 140px;
-	margin: auto;
-	overflow: hidden;
-	border-radius: 10px;
-	background-clip: padding-box;
-	pointer-events: none;
-	user-select: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	background-color: #ffffff;
 }
 
-.pace .pace-progress {
-	transform: none !important;
-	text-align: center;
-}
-
-.pace .pace-progress:after {
-	display: block;
-	content: attr(data-progress-text);
-	color: #161616;
-	font-weight: 100;
-	font-size: 2em;
-	font-family: "Spinnaker", sans-serif;
-}
-
-.pace.pace-inactive {
+.loading-wrap.---inactive {
 	display: none;
 }
 
-.pace-progress-inner {
+.loading-bounce {
 	-webkit-animation-name: sk-circle-bounce;
 	-webkit-animation-duration: 1s;
 	-webkit-animation-timing-function: ease-in-out;
@@ -61,7 +27,6 @@
 	width: 40px;
 	height: 40px;
 	margin: 0 auto;
-	margin-bottom: 20px;
 	margin-bottom: 40px;
 	border-radius: 50%;
 	background-color: #E0B314;
@@ -72,7 +37,10 @@
 	animation-direction: normal;
 	animation-fill-mode: forwards;
 	animation-name: sk-circle-bounce;
-	animation-name: sk-circle-bounce;
+}
+
+.loading-text {
+	font-size: 2.2rem;
 }
 
 @-webkit-keyframes sk-circle-bounce {

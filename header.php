@@ -114,6 +114,7 @@
 <body id="body" <?php if( is_front_page()) :?>
     class="top-page"
 <?php endif; ?>>
+<?php get_template_part('template-parts/loading'); ?>
 <div id="global-wrapper">
     <header>
         <div class="container">
