@@ -677,7 +677,6 @@
 .works-detail__item-wrap .works__img {
 	width: 100%;
 	height: auto;
-	border-radius: 2vw;
 }
 
 .works-detail__item-wrap .works-detail__item-table-wrap {
@@ -931,10 +930,6 @@
 
 .works-detail__item-wrap {
 	width: 100%;
-}
-
-.works-detail__item-wrap .works__img {
-	border-radius: 3vw;
 }
 
 .works-detail__item-wrap .works-detail__item-table-wrap {

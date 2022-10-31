@@ -921,11 +921,6 @@ $light-gley:#F6F6F6;
     .works__img {
         width: 100%;
         height: auto;
-        border-radius: 2vw;
-
-        @include MobileBreakPoint($maxbreakpointMobile) {
-            border-radius: 3vw;
-        }
     }
 
 
