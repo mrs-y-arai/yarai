@@ -679,11 +679,13 @@ header .header__inner .pc__nav .header__nav-list .header__nav-item:first-of-type
 #works .section__inner .works__list .works__item .works__img-wrap {
 	width: 100%;
 	overflow: hidden;
+	border-radius: 2vw;
 }
 
 #works .section__inner .works__list .works__item .works__img-wrap .works__img {
 	display: block;
 	width: 100%;
+	border-radius: 2vw;
 	transition-duration: 0.5s;
 }
 
@@ -1275,6 +1277,14 @@ header .header__inner .pc__nav {
 
 #works .section__inner .works__list .works__item:last-of-type {
 	margin-bottom: 0;
+}
+
+#works .section__inner .works__list .works__item .works__img-wrap {
+	border-radius: 3vw;
+}
+
+#works .section__inner .works__list .works__item .works__img-wrap .works__img {
+	border-radius: 3vw;
 }
 
 #works .section__inner #works__link {

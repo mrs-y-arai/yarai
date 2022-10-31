@@ -990,14 +990,23 @@ header {
                     .works__img-wrap {
                         width: 100%;
                         overflow: hidden;
+                        border-radius: 2vw;
+
+                        @include MobileBreakPoint($maxbreakpointMobile) {
+                            border-radius: 3vw;
+                        }
 
                         .works__img {
                             width: 100%;
                             display: block;
                             transition-duration: 0.5s;
+                            border-radius: 2vw;
+
+                            @include MobileBreakPoint($maxbreakpointMobile) {
+                                border-radius: 3vw;
+                            }
 
                             &:hover {
-
                                 transform:scale(1.1,1.1);
                             }
                         }
