@@ -37,7 +37,7 @@
                         <p class="profile-text md-font">・私は気になったらすぐに行動するタイプの人間です。YouTubeの広告がきっかけで独学でコーディングを始め、今ではWebコーディングで副業できるレベルになりました。特に誰にも先導されることなく、自ら考え学習を進めて来ました。</p>
                         <br>
                         <p class="profile-text md-font">■やりたいこと</p>
-                        <p class="profile-text md-font">・コーポレートサイト制作やLP制作ではなく、Webサービス・システム開発・メディアサイトなどの開発力が必要な開発をしたいと思っております。</p>
+                        <p class="profile-text md-font">・Webサービス・システム開発・メディアサイトなどの開発力が必要な開発をしたいと思っております。</p>
                         <p class="profile-text md-font">・また、コスト削減や売り上げ増加など何かに貢献できている事を感じられるような、物づくりをしたいと思っております。</p>
                         <a href="./about" id="" class="lg-font link-text profile-text__link">View more</a>
                     </div>
