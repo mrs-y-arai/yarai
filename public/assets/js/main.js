@@ -32,7 +32,6 @@ const scrollTopBtn = document.querySelector('#scroll-top');
 scrollTopBtn.addEventListener('click', function(){
 
     window.scroll({
-
         top: 0,
         left: 0,
         behavior: 'smooth'
@@ -54,12 +53,10 @@ const hamburgerBtn = document.querySelector('.hamburger-menu');
 const yellowModal = document.querySelector('.yellow-modal');
 
 hamburgerBtn.addEventListener('click', function(){
-
     const hamburger = new hamburgerAnimation();
 });
 
 yellowModal.addEventListener('click', function(){
-
     const hamburger = new hamburgerAnimation();
 });
 
@@ -72,3 +69,12 @@ window.addEventListener('load', () => {
         loadingWrap.classList.add( '---inactive' );
     }, 700);
 },false)
+
+/////////////////////////////////////////
+// チャットボット非表示
+/////////////////////////////////////////
+const chatBot  = document.querySelector('.chat-bot__link-wrap');
+const chatBotClose  = document.querySelector('.chat-bot__close__text');
+chatBotClose.addEventListener('click', function(){
+    chatBot.classList.add('chat-bot__link-wrap---none');
+});

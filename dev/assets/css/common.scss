@@ -1221,7 +1221,7 @@ footer {
         width: 20px;
         height: 130px;
         position: absolute;
-        top: -140px;
+        top: -230px;
         right: 20px;
         transform: translateY(70px);
         transition-duration: 1s;
@@ -1238,6 +1238,89 @@ footer {
 
             &:hover {
                 opacity: 0.8;
+            }
+        }
+    }
+}
+
+// チャットボット
+.chat-bot__link-wrap {
+    width: auto;
+    height: auto;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    z-index: 700;
+
+    .chat-bot__close {        
+        display: block;        
+        text-align: end;
+        line-height: 18px;
+
+        .chat-bot__close__text {
+            font-size: 2.4rem;
+            cursor: pointer;
+            display: inline-block;
+            line-height: 18px;
+            
+            @include MobileBreakPoint($maxbreakpointMobile) {
+                font-size: 2.8rem;
+            }
+        }
+    }
+}
+.chat-bot__link-wrap---none {
+    display: none;
+}
+.chat-bot__link {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+
+    &:hover {
+        color: $black;
+    }    
+
+    .chat-bot__img-wrap {
+        width: 70px;
+        height: 70px;
+        display: block;
+        transition-duration: 0.5s;
+
+        @include MobileBreakPoint($maxbreakpointMobile) {
+            width: 50px;
+            height: 50px;
+        }
+
+            .chat-bot__img {
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+    }
+
+    &:hover {
+        .chat-bot__img-wrap {
+            transform: translateY(-10px);
+
+            @include MobileBreakPoint($maxbreakpointMobile) {
+                transform: translateY(0px);   
+            }
+        }
+    }
+
+    .chat-bot__text {
+        font-size: 1.2rem;
+        transition-duration: 0.5s;        
+    }
+    &:hover {
+        .chat-bot__text {
+            transform: translateY(-10px);
+
+            @include MobileBreakPoint($maxbreakpointMobile) {
+                transform: translateY(0px);   
             }
         }
     }
