@@ -128,4 +128,24 @@ remove_action('admin_print_scripts', 'print_emoji_detection_script');// 絵文�
 remove_action('admin_print_styles', 'print_emoji_styles');// 絵文字に関するCSS
 
 add_filter( 'show_admin_bar', '__return_false' );
+
+/**
+* フォーム自動入力機能
+*/
+function my_form_tag_filter($tag) {
+	if (!is_array($tag)) {
+		return $tag;
+	}
+  
+	// ラジオボタンの場合
+	if (isset($_GET['type'])) {
+		if ($tag['name'] == 'radio-59') { // nameの値を指定
+			// TODO: エラー処理を加えたほうがいい
+			$tag['options'][] = 'default:' . $_GET['type'];
+		}
+	}
+
+	return $tag;
+}
+add_filter('wpcf7_form_tag', 'my_form_tag_filter', 38);
 ?>
