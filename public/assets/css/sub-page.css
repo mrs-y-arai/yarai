@@ -22,7 +22,7 @@
 	position: relative;
 	width: 48%;
 	height: 170px;
-	margin-top: 8rem;
+	margin-top: 80px;
 	background-color: #E0B314;
 }
 
@@ -64,7 +64,7 @@
 	content: "私について";
 	color: #161616;
 	font-weight: normal;
-	font-size: 1.4rem;
+	font-size: 14px;
 	text-align: center;
 }
 
@@ -102,7 +102,7 @@
 	content: "制作事例";
 	color: #161616;
 	font-weight: normal;
-	font-size: 1.4rem;
+	font-size: 14px;
 	text-align: center;
 }
 
@@ -140,7 +140,7 @@
 	content: "料金表";
 	color: #161616;
 	font-weight: normal;
-	font-size: 1.4rem;
+	font-size: 14px;
 	text-align: center;
 }
 
@@ -178,7 +178,7 @@
 	content: "お問い合わせ";
 	color: #161616;
 	font-weight: normal;
-	font-size: 1.4rem;
+	font-size: 14px;
 	text-align: center;
 }
 
@@ -216,7 +216,7 @@
 	content: "ページが見つかりません";
 	color: #161616;
 	font-weight: normal;
-	font-size: 1.4rem;
+	font-size: 14px;
 	text-align: center;
 }
 
@@ -258,7 +258,7 @@
 	content: "プライバシーポリシー";
 	color: #161616;
 	font-weight: normal;
-	font-size: 1.4rem;
+	font-size: 14px;
 	text-align: center;
 }
 
@@ -287,11 +287,11 @@
 	align-items: center;
 	justify-content: center;
 	margin: 0 auto;
-	margin-top: 2.5rem;
+	margin-top: 25px;
 }
 
 .sub-page__hdl-wrap .breadcrumb .home__link {
-	margin-right: 1rem;
+	margin-right: 10px;
 }
 
 .sub-page__hdl-wrap .breadcrumb .home__link:hover {
@@ -299,7 +299,7 @@
 }
 
 .sub-page__hdl-wrap .breadcrumb .now__area {
-	margin-left: 1rem;
+	margin-left: 10px;
 }
 
 .breadcrumb {
@@ -307,7 +307,7 @@
 	align-items: center;
 	justify-content: center;
 	margin: 0 auto;
-	margin-top: 2.5rem;
+	margin-top: 25px;
 }
 
 .breadcrumb .breadcrumb__separation {
@@ -335,7 +335,7 @@
 
 .about__main-inner .md-hdl {
 	position: relative;
-	margin-bottom: 4rem;
+	margin-bottom: 40px;
 	text-align: center;
 }
 
@@ -352,11 +352,15 @@
 	content: "";
 }
 
+.about__main-inner .profile__sec {
+	margin-bottom: 100px;
+}
+
 .about__main-inner .profile__sec .profile__inner {
 	box-sizing: border-box;
-	width: 93%;
+	width: 100%;
 	margin: 0 auto;
-	padding: 4rem 3rem;
+	padding: 40px 30px;
 	border-radius: 3vw;
 	background-color: #F6F6F6;
 }
@@ -369,7 +373,7 @@
 	width: 70%;
 	height: auto;
 	margin: 0 auto;
-	padding: 1rem 2rem;
+	padding: 10px 20px;
 	text-align: center;
 }
 
@@ -381,8 +385,8 @@
 }
 
 .about__main-inner .profile__sec .profile__inner .profile-head .profile-head__img-wrap .profile-head__img {
-	width: 100%;
-	height: auto;
+	width: 350px;
+	height: 350px;
 }
 
 .about__main-inner .profile__sec .profile__inner .profile-text__detail {
@@ -390,7 +394,7 @@
 	width: 80%;
 	height: auto;
 	margin: 0 auto;
-	padding: 1rem 2rem;
+	padding: 10px 20px;
 }
 
 .about__main-inner .profile__sec .profile__inner .profile-text__detail .profile__text {
@@ -398,8 +402,75 @@
 	line-height: 1.8;
 }
 
-.about__main-inner .history__sec {
-	background-color: #ffffff;
+.about__main-inner .skill__sec {
+	margin-bottom: 100px;
+}
+
+.about__main-inner .skill__sec .skill__table {
+	width: 100%;
+}
+
+.about__main-inner .skill__sec .skill__table tbody {
+	border-radius: 3vw;
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+.about__main-inner .skill__sec .skill__table tbody tr {
+	border-radius: 3vw;
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+.about__main-inner .skill__sec .skill__table tbody tr th {
+	box-sizing: border-box;
+	width: 25%;
+	border-bottom: 2px solid #ffffff;
+	border-radius: 0.3vw 0 0 0.3vw;
+	border-collapse: separate;
+	border-spacing: 0;
+	background-color: #E0B314;
+	vertical-align: middle;
+}
+
+.about__main-inner .skill__sec .skill__table tbody tr td {
+	border-bottom: 2px solid #ffffff;
+	border-radius: 0 0.3vw 0.3vw 0;
+	border-collapse: separate;
+	border-spacing: 0;
+	background-color: #FFF3CD;
+}
+
+.about__main-inner .skill__sec .skill__table th,
+.about__main-inner .skill__sec .skill__table td {
+	padding: 10px;
+}
+
+.about__main-inner .strength__sec .strength__inner {
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0 auto;
+	padding: 40px 30px;
+	border-radius: 3vw;
+	background-color: #F6F6F6;
+}
+
+.strength__text-box {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.strength__text-box .strength__text-box__hdl {
+	margin-bottom: 10px;
+	text-align: start;
+}
+
+.strength__text-box .strength__text-box__text {
+	margin-bottom: 20px;
+}
+
+.strength__text-box .strength__text-box__text:last-of-type {
+	margin-bottom: 0;
 }
 
 .works__main-inner {
@@ -422,13 +493,13 @@
 }
 
 .works__main-inner .works__list .works__item:nth-of-type(2n) {
-	margin-top: 8rem;
+	margin-top: 80px;
 }
 
 .works__main-inner .works__list .works__item .works__item-wrap {
 	box-sizing: border-box;
 	width: 100%;
-	padding: 2rem 3rem;
+	padding: 20px 30px;
 }
 
 .works__main-inner .works__list .works__item .works__item-wrap .works__img-wrap {
@@ -453,8 +524,8 @@
 	display: flex;
 	flex-direction: column;
 	justify-items: center;
-	margin-top: 1rem;
-	padding: 1rem 2rem;
+	margin-top: 10px;
+	padding: 10px 20px;
 }
 
 .works__main-inner .works__list .works__item .works__item-wrap .works__description-wrap .works__item-hdl {
@@ -463,7 +534,7 @@
 
 .works__main-inner .works__list .works__item .works__item-wrap .works__description-wrap .works__description {
 	box-sizing: border-box;
-	padding-top: 1rem;
+	padding-top: 10px;
 }
 
 .works__main-inner .works__list .works__item .works__item-wrap .works__link {
@@ -478,7 +549,7 @@
 .price__main-inner .table-bordered {
 	width: 90%;
 	margin: 0 auto;
-	margin-bottom: 3rem;
+	margin-bottom: 30px;
 }
 
 .price__main-inner .table-bordered tbody {
@@ -502,13 +573,13 @@
 .price__main-inner .table-bordered tbody tr #price__headline {
 	box-sizing: border-box;
 	width: 30%;
-	padding: 2rem 0.5rem;
+	padding: 20px 5px;
 	line-height: 24.5px;
 }
 
 .price__main-inner .table-bordered tbody tr #price__info {
 	box-sizing: border-box;
-	padding: 2rem 0.5rem;
+	padding: 20px 5px;
 	font-weight: normal;
 	line-height: 24.5px;
 }
@@ -519,7 +590,7 @@
 
 .price__main-inner .contact__wrap {
 	width: 80%;
-	margin-top: 6rem;
+	margin-top: 60px;
 }
 
 #contact__area {
@@ -533,7 +604,7 @@
 #contact__area label {
 	display: block;
 	width: 100%;
-	margin-bottom: 1rem;
+	margin-bottom: 10px;
 }
 
 #contact__area p {
@@ -587,7 +658,7 @@
 	height: 48px;
 	margin: 0 auto;
 	margin: 0 auto;
-	margin-top: 4rem;
+	margin-top: 40px;
 	border: 1px solid #E0B314;
 	border: none;
 	border-radius: 3px;
@@ -597,7 +668,7 @@
 	box-shadow: 0px 0px 8px 1px rgba(224, 179, 20, 0.8);
 	color: #E0B314;
 	font-weight: bold;
-	font-size: 2rem;
+	font-size: 20px;
 	line-height: 48px;
 	line-height: 36px;
 	text-align: center;
@@ -645,7 +716,7 @@
 .privacy__main-inner .privacy__item {
 	width: 60%;
 	margin: 0 auto;
-	margin-bottom: 4rem;
+	margin-bottom: 40px;
 }
 
 .privacy__main-inner .privacy__item:last-of-type {
@@ -657,7 +728,7 @@
 }
 
 .privacy__main-inner .privacy__item .md-font {
-	margin-top: 1.5rem;
+	margin-top: 15px;
 	text-align: center;
 }
 
@@ -713,7 +784,7 @@
 	width: 260px;
 	height: 50px;
 	margin: 0 auto;
-	margin-top: 4rem;
+	margin-top: 40px;
 	border: 1px solid #E0B314;
 	border-radius: 3px;
 	border-radius: 3vw;
@@ -731,6 +802,11 @@
 }
 
 .about__main-inner .profile__sec .profile__inner .profile-head .profile-head__img-wrap {
+	width: 24.3vw;
+	height: 24.3vw;
+}
+
+.about__main-inner .profile__sec .profile__inner .profile-head .profile-head__img-wrap .profile-head__img {
 	width: 24.3vw;
 	height: 24.3vw;
 }
@@ -776,7 +852,7 @@
 }
 
 .sub-page__hdl-wrap .about-page__hdl:before {
-	font-size: 1.2rem;
+	font-size: 12px;
 }
 
 .sub-page__hdl-wrap .about-page__hdl:after {
@@ -785,7 +861,7 @@
 }
 
 .sub-page__hdl-wrap .works-page__hdl:before {
-	font-size: 1.2rem;
+	font-size: 12px;
 }
 
 .sub-page__hdl-wrap .works-page__hdl:after {
@@ -794,7 +870,7 @@
 }
 
 .sub-page__hdl-wrap .price-page__hdl:before {
-	font-size: 1.2rem;
+	font-size: 12px;
 }
 
 .sub-page__hdl-wrap .price-page__hdl:after {
@@ -803,7 +879,7 @@
 }
 
 .sub-page__hdl-wrap .contact-page__hdl:before {
-	font-size: 1.2rem;
+	font-size: 12px;
 }
 
 .sub-page__hdl-wrap .contact-page__hdl:after {
@@ -812,7 +888,7 @@
 }
 
 .sub-page__hdl-wrap .none-page__hdl:before {
-	font-size: 1.2rem;
+	font-size: 12px;
 }
 
 .sub-page__hdl-wrap .none-page__hdl:after {
@@ -821,7 +897,7 @@
 }
 
 .sub-page__hdl-wrap .privacy-policy-page__hdl:before {
-	font-size: 1.2rem;
+	font-size: 12px;
 }
 
 .sub-page__hdl-wrap .privacy-policy-page__hdl:after {
@@ -834,9 +910,13 @@
 	margin-bottom: 15vw;
 }
 
+.about__main-inner .profile__sec {
+	margin-bottom: 50px;
+}
+
 .about__main-inner .profile__sec .profile__inner {
 	width: 90%;
-	padding: 2rem 2rem;
+	padding: 20px 20px;
 }
 
 .about__main-inner .profile__sec .profile__inner .profile-head {
@@ -845,8 +925,13 @@
 }
 
 .about__main-inner .profile__sec .profile__inner .profile-head .profile-head__img-wrap {
-	width: 27vw;
-	height: 27vw;
+	width: 40vw;
+	height: 40vw;
+}
+
+.about__main-inner .profile__sec .profile__inner .profile-head .profile-head__img-wrap .profile-head__img {
+	width: 40vw;
+	height: 40vw;
 }
 
 .about__main-inner .profile__sec .profile__inner .profile-text__detail {
@@ -856,6 +941,43 @@
 
 .about__main-inner .profile__sec .profile__inner .profile-text__detail .profile__text {
 	margin-bottom: 3vw;
+}
+
+.about__main-inner .skill__sec {
+	margin-bottom: 50px;
+}
+
+.about__main-inner .skill__sec .skill__table tbody tr {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	border-bottom: 15px solid #ffffff;
+}
+
+.about__main-inner .skill__sec .skill__table tbody tr th {
+	width: 100%;
+	border: none;
+	border-radius: 0.8vw 0.8vw 0 0;
+}
+
+.about__main-inner .skill__sec .skill__table tbody tr td {
+	border: none;
+	border-radius: 0 0 0.8vw 0.8vw;
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+.about__main-inner .strength__sec .strength__inner {
+	width: 90%;
+	padding: 20px 20px;
+}
+
+.strength__text-box .strength__text-box__hdl {
+	margin-bottom: 5px;
+}
+
+.strength__text-box .strength__text-box__text {
+	margin-bottom: 15px;
 }
 
 .works__main-inner .works__list .works__item {
@@ -925,7 +1047,7 @@
 }
 
 #contact__area input[type=submit] {
-	margin-top: 3rem;
+	margin-top: 30px;
 }
 
 .works-detail__item-wrap {
@@ -949,7 +1071,7 @@
 }
 
 .archive__link-btn {
-	margin-top: 3rem;
+	margin-top: 30px;
 }
 
 }

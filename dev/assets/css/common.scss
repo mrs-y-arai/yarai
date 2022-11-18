@@ -31,12 +31,12 @@ $maxbreakpointTablet: 1024px;
     margin: 0 auto;
     text-align: center;
     position: relative;
-    margin-top: 4rem;
+    margin-top: 40px;
     font-weight: bold;
     border-radius: 3vw;
 
     @include MobileBreakPoint($maxbreakpointMobile) {
-        margin-top: 3rem;       
+        margin-top: 30px;       
     }        
 }
 
@@ -50,7 +50,7 @@ $maxbreakpointTablet: 1024px;
         display: block;
         position: absolute;
         color: $black;
-        font-size: 1.4rem;
+        font-size: 14px;
         top: 110%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -62,7 +62,7 @@ $maxbreakpointTablet: 1024px;
         font-weight: normal;
 
         @include MobileBreakPoint($maxbreakpointMobile) {
-            font-size: 1.2rem;
+            font-size: 12px;
         }
     }
 }
@@ -179,6 +179,7 @@ $white: #ffffff;
 $blue: #1C31F5;
 $red: #EF6D6D;
 $light-gley:#F6F6F6;
+$light-yellow: #FFF3CD;
 
 // フォントサイズ
 html {
@@ -186,86 +187,86 @@ html {
 }
 
 .lg-hdl {
-    font-size: 5rem;
+    font-size: 50px;
 
     @include MobileBreakPoint($maxbreakpointTablet) {
         font-size: 5vw;
     }
 
     @include MobileBreakPoint($maxbreakpointMobile) {
-        font-size: 3.6rem;
+        font-size: 36px;
     }
 }
 
 .md-hdl {
-    font-size: 5rem;
+    font-size: 50px;
 
     @include MobileBreakPoint($maxbreakpointTablet) {
         font-size: 5vw;
     }
 
     @include MobileBreakPoint($maxbreakpointMobile) {
-        font-size: 3rem;
+        font-size: 30px;
     }
 }
 
 .sm-hdl {
-    font-size: 2.1rem;
+    font-size: 21px;
 
     @include MobileBreakPoint($maxbreakpointTablet) {
         font-size: 2.1vw;
     }
 
     @include MobileBreakPoint($maxbreakpointMobile) {
-        font-size: 1.8rem;
+        font-size: 18px;
     }
 }
 
 .xl-font {
-    font-size: 3rem;
+    font-size: 30px;
 
     @include MobileBreakPoint($maxbreakpointTablet) {
         font-size: 3vw;
     }
 
     @include MobileBreakPoint($maxbreakpointMobile) {
-        font-size: 2.1rem;
+        font-size: 21px;
     }
 }
 
 .lg-font {
-    font-size: 2rem;
+    font-size: 20px;
 
     @include MobileBreakPoint($maxbreakpointTablet) {
         font-size: 2vw;
     }
 
     @include MobileBreakPoint($maxbreakpointMobile) {
-        font-size: 1.8rem;
+        font-size: 18px;
     }
 }
 
 .md-font {
-    font-size: 1.6rem;
+    font-size: 16px;
 
     @include MobileBreakPoint($maxbreakpointTablet) {
         font-size: 1.6vw;
     }
 
     @include MobileBreakPoint($maxbreakpointMobile) {
-        font-size: 1.4rem;
+        font-size: 14px;
     }
 }
 
 .sm-font {
-    font-size: 1.4rem;
+    font-size: 14px;
 
     @include MobileBreakPoint($maxbreakpointTablet) {
         font-size: 2.4vw;
     }
 
     @include MobileBreakPoint($maxbreakpointMobile) {
-        font-size: 1.2rem;
+        font-size: 12px;
     }
 }
 
@@ -316,11 +317,10 @@ p {
     text-align: center;
     z-index: 2;
     width: 200px;
-    margin-bottom: 4.5rem;
+    margin-bottom: 45px;
 }
 
 section {
-
     position: relative;
     width: 100%;
     height: auto;
@@ -436,10 +436,10 @@ main {
 
     #contact__link {
         @include moreBtnMaker($btn-width: 190px, $btn-height: 50px);
-        margin-top: 2rem;        
+        margin-top: 20px;        
 
         @include MobileBreakPoint($maxbreakpointMobile) {
-            margin-top: 1rem;
+            margin-top: 10px;
             width: 50vw;
         }
     }
@@ -526,10 +526,10 @@ a {
 .section__inner {
     width: 100%;
     margin: 0 auto;
-    margin-top: 6rem;
+    margin-top: 60px;
 
     @include MobileBreakPoint($maxbreakpointMobile) {
-        margin-top: 3rem;       
+        margin-top: 30px;       
     }
 }
 
@@ -584,7 +584,7 @@ header {
                 justify-content: flex-end;
 
                 .header__nav-item {
-                    margin-left: 2rem;
+                    margin-left: 20px;
 
                     &:first-of-type {
                         margin-left: 0;
@@ -736,10 +736,10 @@ header {
 
             .mobile-header__nav-item {
 
-                margin-top: 2rem;
+                margin-top: 20px;
                 
                 a {
-                    font-size: 2rem;
+                    font-size: 20px;
                 }
                 
             }
@@ -767,10 +767,10 @@ header {
         width: 100%;
         height: auto;
         box-sizing: border-box;
-        padding-top: 10rem;
+        padding-top: 100px;
 
         @include MobileBreakPoint($maxbreakpointMobile) {
-            padding-top: 12rem;
+            padding-top: 120px;
         }
 
         .main-visual__title {
@@ -781,13 +781,13 @@ header {
 
         .page__lead {
             text-align: center;
-            margin-top: 4rem;
+            margin-top: 40px;
             display: block;
             font-weight: normal;
 
             @include MobileBreakPoint($maxbreakpointMobile) {
 
-                margin-top: 4rem;
+                margin-top: 40px;
 
                 br {
                     display: none;
@@ -799,14 +799,14 @@ header {
             @include moreBtnMaker($btn-width: 560px, $btn-height: 101px);
             background-color: $white;
             color: $yellow;
-            margin-top: 7rem;
+            margin-top: 70px;
             font-weight: bold;
 
             @include MobileBreakPoint($maxbreakpointMobile) {
                 width: 80%;
                 height: 15vw;
                 line-height: 15vw;
-                margin-top: 4rem;
+                margin-top: 40px;
             }
 
             span {
@@ -840,12 +840,12 @@ header {
             width: 100%;
             height: auto;
             margin: 0 auto;
-            margin-top: 4rem;
+            margin-top: 40px;
         }
 
         .profile-img__wrap {
             width: 350px;
-            height: 350px;
+            height: auto;
             position: absolute;
             top: -5%;
             right: 5%;
@@ -856,7 +856,7 @@ header {
             @include MobileBreakPoint($maxbreakpointTablet) {
 
                 width: 26vw;
-                height: 26vw;
+                height: auto;
             }
 
             @include MobileBreakPoint($maxbreakpointMobile) {
@@ -874,9 +874,9 @@ header {
             width: 90%;
             height: 80%;
             box-sizing: border-box;
-            padding: 3rem 4rem 8rem 4rem;
+            padding: 30px 40px 80px 40px;
             z-index: 2;
-            background-color: #FFFBEF;
+            background-color: $light-yellow;
             border-radius: 3vw;
 
             @include MobileBreakPoint($maxbreakpointMobile) {
@@ -890,16 +890,16 @@ header {
                 margin-bottom: 0;
 
                 span {
-                    font-size: 4.8rem;
+                    font-size: 4.80px;
 
                     @include MobileBreakPoint($maxbreakpointMobile) {
-                        font-size: 3.6rem;
+                        font-size: 36px;
                     }
                 }
             }
 
             .profile__name {
-                margin-bottom: 3rem;
+                margin-bottom: 30px;
             }
 
             .profile-text {
@@ -908,7 +908,7 @@ header {
 
             .profile-text__link {
 
-                margin-top: 2rem;
+                margin-top: 20px;
             }
 
         }
@@ -978,7 +978,7 @@ header {
 
                 @include MobileBreakPoint($maxbreakpointMobile) {
                     width: 100%;
-                    margin-bottom: 6rem;
+                    margin-bottom: 60px;
                     height: auto;
 
                     &:last-of-type {
@@ -1021,13 +1021,13 @@ header {
                         align-items: center;
 
                         .works__item-hdl {
-                            margin-top: 1.6rem;
-                            margin-bottom: 1.6rem;
+                            margin-top: 16px;
+                            margin-bottom: 16px;
                             font-weight: 500;
                         }
 
                         .sm-font {
-                            margin-top: 1.6rem;
+                            margin-top: 16px;
                             text-align: center;
                         }
                     }
@@ -1040,7 +1040,7 @@ header {
         }
         #works__link {
             @include moreBtnMaker($btn-width: 180px, $btn-height: 50px);
-            margin-top: 2rem;
+            margin-top: 20px;
         }
     }
 }
@@ -1138,7 +1138,7 @@ header {
                     width: 100%;
                     display: flex;
                     align-items: center;
-                    margin-bottom: 6rem;
+                    margin-bottom: 60px;
                     flex-direction: column;
 
                     &:last-of-type{
@@ -1166,8 +1166,8 @@ header {
                     }
 
                     .skill__item-hdl {
-                        margin-top: 1.6rem;
-                        margin-bottom: 1.6rem;
+                        margin-top: 16px;
+                        margin-bottom: 16px;
                         font-weight: 500;
                     }
                 }
@@ -1176,7 +1176,7 @@ header {
                     width: 100%;
                     box-sizing: border-box;
                     padding: 10px 15px 20px 15px;
-                    margin-top: 1rem;
+                    margin-top: 10px;
 
                     @include MobileBreakPoint($maxbreakpointMobile) {
                         width: 100%;
@@ -1258,13 +1258,13 @@ footer {
         line-height: 18px;
 
         .chat-bot__close__text {
-            font-size: 2.4rem;
+            font-size: 24px;
             cursor: pointer;
             display: inline-block;
             line-height: 18px;
             
             @include MobileBreakPoint($maxbreakpointMobile) {
-                font-size: 2.8rem;
+                font-size: 28px;
             }
         }
     }
@@ -1312,7 +1312,7 @@ footer {
     }
 
     .chat-bot__text {
-        font-size: 1.2rem;
+        font-size: 12px;
         transition-duration: 0.5s;        
     }
     &:hover {
