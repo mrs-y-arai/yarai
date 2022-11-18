@@ -77,7 +77,7 @@ Template Name: 自己紹介ページ
                     <div class="strength__text-box">
                         <h3 class="sm-hdl strength__text-box__hdl">1.自走力がある</h3>
                         <p class="md-font strength__text-box__text">                    
-                            私は、コーディングを独学で始めました。スクールに通うことなく、どうしたらコーディングができるようになるのか考え、学習を進めました。わからないところはネットで調べるなどして、学習しておりました。その結果、副業でWordpressサイト制作の仕事をいただけるようになりました。最近は、Vue.jsの学習をし、自作アプリの開発を行いました。
+                            私は、コーディングを独学で始めました。スクールに通うことなく、自走して学習を進めました。わからないところはネットで調べるなどして、学習しておりました。その結果、副業でWordpressサイト制作の仕事をいただけるようになりました。最近は、Vue.jsの学習をし、自作アプリの開発を行いました。
                         </p>
                         <h3 class="sm-hdl strength__text-box__hdl">2.挑戦することができる</h3>
                         <p class="md-font strength__text-box__text">

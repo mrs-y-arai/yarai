@@ -332,7 +332,7 @@ $light-yellow: #FFF3CD;
 
             @include MobileBreakPoint($maxbreakpointMobile) {
 
-                width: 90%;
+                width: 100%;
                 padding: 20px 20px;
             }
 
@@ -389,8 +389,7 @@ $light-yellow: #FFF3CD;
                 
             }
 
-            
-    
+        
             .profile-text__detail {
                 width: 80%;
                 height: auto;
@@ -399,7 +398,7 @@ $light-yellow: #FFF3CD;
                 padding: 10px 20px;
     
                 @include MobileBreakPoint($maxbreakpointMobile) {
-                    width: 90%;
+                    width: 95%;
                     padding: 5vw 0;
                 }
                 
@@ -499,8 +498,7 @@ $light-yellow: #FFF3CD;
             border-radius: 3vw;
 
             @include MobileBreakPoint($maxbreakpointMobile) {
-
-                width: 90%;
+                width: 100%;
                 padding: 20px 20px;
             }            
 
@@ -511,21 +509,17 @@ $light-yellow: #FFF3CD;
     width: 80%;
     margin: 0 auto;
 
+    @include MobileBreakPoint($maxbreakpointMobile) {
+        width: 95%;
+    }
+
     .strength__text-box__hdl {
         text-align: start;
         margin-bottom: 10px;
-
-        @include MobileBreakPoint($maxbreakpointMobile) {
-            margin-bottom: 5px;
-        }
     }
 
     .strength__text-box__text {
-        margin-bottom: 20px;
-
-        @include MobileBreakPoint($maxbreakpointMobile) {
-            margin-bottom: 15px;
-        }
+        margin-bottom: 20px;        
 
         &:last-of-type {
             margin-bottom: 0;

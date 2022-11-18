@@ -27,9 +27,9 @@
                         <br>
                         <p class="profile-text md-font">■できること</p>
                         <p class="profile-text md-font">・HTML/CSSコーディング/アニメーション作成</p>
-                        <p class="profile-text md-font">・プログラミング(JavaScript/Vue.js/gulp.js/C++/シェルスクリプトなど)</p>
-                        <p class="profile-text md-font">・PHPによる、Wordpress自作テーマ開発/Wordpress既存テーマカスタマイズ</p>                        
-                        <p class="profile-text md-font">・Webディレクション(顧客折衝/スケジュール管理/品質管理など。受注額1000万円台の案件のディレクション経験あり)</p>
+                        <p class="profile-text md-font">・プログラミング(JavaScript/Vue.js/C++など)</p>
+                        <p class="profile-text md-font">・PHPによる、Wordpressテーマ開発</p>
+                        <p class="profile-text md-font">・Webディレクション(顧客折衝/スケジュール管理など。受注額1000万円台の案件のディレクション経験)</p>
                         <p class="profile-text md-font">・機能設計/テスト設計(コーポレートサイトレベル)</p>
                         <br>
                         <p class="profile-text md-font">■強み</p>

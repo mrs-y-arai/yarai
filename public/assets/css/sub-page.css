@@ -915,7 +915,7 @@
 }
 
 .about__main-inner .profile__sec .profile__inner {
-	width: 90%;
+	width: 100%;
 	padding: 20px 20px;
 }
 
@@ -935,7 +935,7 @@
 }
 
 .about__main-inner .profile__sec .profile__inner .profile-text__detail {
-	width: 90%;
+	width: 95%;
 	padding: 5vw 0;
 }
 
@@ -968,16 +968,12 @@
 }
 
 .about__main-inner .strength__sec .strength__inner {
-	width: 90%;
+	width: 100%;
 	padding: 20px 20px;
 }
 
-.strength__text-box .strength__text-box__hdl {
-	margin-bottom: 5px;
-}
-
-.strength__text-box .strength__text-box__text {
-	margin-bottom: 15px;
+.strength__text-box {
+	width: 95%;
 }
 
 .works__main-inner .works__list .works__item {

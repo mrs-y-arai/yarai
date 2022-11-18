@@ -1,6 +1,6 @@
 <ul class="breadcrumb lg-font fadeIn">
     <li>
-        <a href="<?php echo home_url(); ?>" class="md-font letter-spacing">HOME</a>
+        <a href="<?php echo home_url(); ?>" class="md-font letter-spacing">Home</a>
     </li>
     <li class="breadcrumb__separation">
         <p class="md-font">&gt;</p>
