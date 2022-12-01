@@ -165,10 +165,7 @@
                 <div class="section__inner">
                     <p class="section__text contact__text md-font">
                         お気軽にお問い合わせください。
-                    </p>
-                    <p class="section__text contact__text md-font">
-                        メールアドレス<br>araiyuuuki96@yahoo.co.jp
-                    </p>
+                    </p>                    
                     <a href="./contact" id="contact__link" class="lg-font  slide-bg">CONTACT</a>
                     <!-- <div class="contact__wrap">
                     </div> -->

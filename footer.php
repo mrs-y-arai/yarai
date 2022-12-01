@@ -17,7 +17,7 @@
             <div class="chat-bot__close">
                 <p class="chat-bot__close__text">×</p>
             </div>
-            <a href="https://portforio-chat-bot.web.app/" class="chat-bot__link" target="_blank" rel="noopener noreferrer">            
+            <a href="https://ts-portforio-chat-bot.web.app/" class="chat-bot__link" target="_blank" rel="noopener noreferrer">            
                 <div class="chat-bot__img-wrap">
                     <img src="<?php echo esc_url( get_template_directory_uri() ). '/public/assets/img/chatbot.png'; ?>" alt="チャットボットを始める" class="chat-bot__img">
                 </div>
