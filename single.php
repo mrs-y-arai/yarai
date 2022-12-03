@@ -11,13 +11,48 @@
             <div class="works-detail__item-table-wrap">
                 <table class="works-detail__item-table">
                     <tbody>
-                        <tr><th>種別</th><td><?php echo CFS()->get( 'works_type' );?></td></tr>
-                        <tr><th>対応範囲</th><td><?php echo CFS()->get( 'works_area' );?></td></tr>
-                        <tr><th>使用ツール・言語</th><td><?php echo CFS()->get( 'works_tool' );?></td></tr>
-                        <tr><th>ページボリューム</th><td><?php echo CFS()->get( 'works_volume' );?></td></tr>
-                        <tr><th>URL(URLクリックでアクセス！)</th><td><a href="<?php echo CFS()->get( 'works_link' );?>" target="_blank" rel="noreferrer noopener"><?php echo CFS()->get( 'works_link' );?></a></td></tr>
-                        <tr><th>Basic認証(ID/PASS)</th><td><?php echo CFS()->get( 'works_basic' );?></td></tr>
-                        <tr><th>ポイント</th><td><?php echo CFS()->get( 'works_detail' );?></td></tr>
+                        <tr>
+                            <th>種別</th>
+                            <td><?php echo CFS()->get( 'works_type' );?></td>
+                        </tr>
+                        <tr>
+                            <th>対応範囲</th>
+                            <td><?php echo CFS()->get( 'works_area' );?></td>
+                        </tr>
+                        <tr>
+                            <th>使用ツール・言語</th>
+                            <td><?php echo CFS()->get( 'works_tool' );?></td>
+                        </tr>
+                        <tr>
+                            <th>ページ数</th>
+                            <td><?php echo CFS()->get( 'works_volume' );?></td>
+                        </tr>
+                        <tr>
+                            <th>URL(クリックでアクセス)</th>
+                            <td><a href="<?php echo CFS()->get( 'works_link' );?>" target="_blank" rel="noreferrer noopener"><?php echo CFS()->get( 'works_link' );?></a></td>
+                        </tr>
+                        <!-- basic認証が入力されているとき -->
+                        <?php
+                        $basicId = CFS()->get( 'works_basic' );
+                        if( $basicId !== "" ){ ?>
+                        <tr>
+                            <th>Basic認証(ID/PASS)</th>
+                            <td><?php echo $basicId;?></td>
+                        </tr>
+                        <?php } ?>
+                        <!-- githubのURLが入力されているとき -->
+                        <?php
+                        $gitUrl = CFS()->get( 'works_git' );
+                        if( $gitUrl !== "" ){ ?>
+                        <tr>
+                            <th>Github</th>
+                            <td><a href="<?php echo $gitUrl;?>" target="_blank" rel="noreferrer noopener"><?php echo $gitUrl;?></a></td>
+                        </tr>
+                        <?php } ?>
+                        <tr>
+                            <th>ポイント</th>
+                            <td><?php echo CFS()->get( 'works_detail' );?></td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
