@@ -653,10 +653,15 @@ $light-yellow: #FFF3CD;
     }
 
     .pagenation {
-        width: 160px;
+        width: fit-content;
         display: flex;
-        justify-content: space-between;
         margin: 0 auto;
+
+        li {
+            &:not(:last-of-type) {
+                margin-right: 8px;
+            }
+        }
     }
 }
 
