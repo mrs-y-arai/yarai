@@ -39,9 +39,16 @@
             </div>
         </li>
 
-        <?php endwhile; ?>       
+        <?php endwhile; ?>
 
     </ul>
+
+    <?php
+    // 「pagenation」という関数が定義されていれば呼び出す
+    if( function_exists('pagenation') ){ 
+        pagenation();
+    }
+    ?>
 
     <?php else:?>
 

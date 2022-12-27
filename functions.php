@@ -18,7 +18,7 @@ add_action('after_setup_theme', 'my_setup');
 */
 function my_script_init()
 {
-    wp_enqueue_style('my-css-1', get_template_directory_uri() . '/public/assets/css/reset.min.css', array(), '1.0.0', 'all');	
+  wp_enqueue_style('my-css-1', get_template_directory_uri() . '/public/assets/css/reset.min.css', array(), '1.0.0', 'all');	
 	wp_enqueue_style('my-css-2', get_template_directory_uri() . '/public/assets/css/common.min.css', array(), '1.0.0', 'all');
 	wp_enqueue_style('my-css-3', get_template_directory_uri() . '/public/assets/css/loader.min.css', array(), '1.0.0', 'all');
 	if( !is_home() || !is_front_page() ) {
@@ -148,4 +148,58 @@ function my_form_tag_filter($tag) {
 	return $tag;
 }
 add_filter('wpcf7_form_tag', 'my_form_tag_filter', 38);
+
+// ページネーション
+/* 
+* $pages : 全ページ数
+* $paged : 現在のページ
+* $range : 左右に何ページ表示するか
+*/
+function pagenation( $pages = '', $range = 2 ) {
+
+  // 現在のページ番号を取得
+  global $paged;
+  // ページ番号が空であれば1をセット
+  if ( empty($paged) ) $paged = 1;
+
+  if ( $pages == '' ) {
+    // 全ページ数を取得
+    global $wp_query;
+    $pages = $wp_query->max_num_pages;
+
+    // 取得できなければ1をセット
+    if ( !$pages ) {
+      $pages = 1;
+    }
+  }
+
+  // 2ページ以上ある場合に表示
+  if( 1 != $pages ) {
+
+    echo "<ul class=\"pagenation\">";
+
+    // 前へ
+    if ( $paged > 1 ) {
+      echo "<li class=\"prev\"><a href='".get_pagenum_link($paged - 1)."'>前へ</a></li>";
+    }
+
+    // ページ番号を表示
+    for ( $i = 1; $i <= $pages; $i++ ) {
+      if ( $i <= $paged + $range && $i >= $paged - $range ) {
+        if ( $paged == $i ) {
+          echo "<li class=\"current\">".$i."</li>";
+        } else {
+          echo "<li><a href='".get_pagenum_link($i)."'>".$i."</a></li>";
+        }
+      }
+    }
+
+    // 次へ
+    if ( $paged < $pages ) { 
+      echo "<li class=\"next\"><a href='".get_pagenum_link($paged + 1)."'>次へ</a></li>";
+    }
+
+    echo "</ul>";
+  }
+}
 ?>

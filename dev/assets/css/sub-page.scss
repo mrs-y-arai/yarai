@@ -536,6 +536,7 @@ $light-yellow: #FFF3CD;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        margin-bottom: 15px;
 
         .works__item {
             width: 480px;
@@ -650,9 +651,14 @@ $light-yellow: #FFF3CD;
             }
         }
     }
+
+    .pagenation {
+        width: 160px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
 }
-
-
 
 // Price
 .price__main-inner {
@@ -1105,5 +1111,3 @@ $light-yellow: #FFF3CD;
 .archive__link-btn {
     @include moreBtnMaker($btn-width: 260px, $btn-height: 50px);
 }
-
-

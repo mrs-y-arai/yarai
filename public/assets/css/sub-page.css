@@ -482,6 +482,7 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 	width: 100%;
+	margin-bottom: 15px;
 }
 
 .works__main-inner .works__list .works__item {
@@ -544,6 +545,13 @@
 	width: fit-content;
 	margin: 0 auto;
 	margin-top: 20px;
+}
+
+.works__main-inner .pagenation {
+	display: flex;
+	justify-content: space-between;
+	width: 160px;
+	margin: 0 auto;
 }
 
 .price__main-inner .table-bordered {
